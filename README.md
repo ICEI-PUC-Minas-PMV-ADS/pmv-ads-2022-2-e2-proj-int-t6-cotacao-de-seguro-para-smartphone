@@ -11,7 +11,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 ## Integrantes
 
 * Ayrles Alves De Lima Sales
-* Bruno Olimpio Timóteo
+* Bruno Roberto Olympio Ferreira
 * Guilherme Servelo Da Costa
 * Leandro Furtado De Sousa
 * Leonardo Moreira Franco De Souza
