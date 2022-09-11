@@ -72,4 +72,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 O diagrama contempla as principais ligações previstas entre casos de uso e atores e permite detalhar os Requisitos Funcionais identificados na etapa de elicitação. 
 
-![image](https://user-images.githubusercontent.com/90807404/189485685-55fb951c-e250-4bf5-83dd-4432cee49ebc.png)
+![Diagrama de Caso de Uso_V2](https://user-images.githubusercontent.com/90807404/189547452-9f5a2dde-dda6-4c4d-9e46-3f6f8d7fbe84.png)
+
+
