@@ -6,7 +6,7 @@
 
 `Eixo 2`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Criação de uma aplicação interativa que permite aos usuários realizar cotações para segurar seus aparelhos smartphone com melhor custo benefício de plano e franquia e que contemple a assistência técnica 24 horas, cobrindo quebra acidental, perda, danos líquidos ou furto..
 
 ## Integrantes
 
