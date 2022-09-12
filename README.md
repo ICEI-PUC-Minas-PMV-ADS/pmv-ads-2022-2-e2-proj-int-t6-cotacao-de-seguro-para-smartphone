@@ -12,7 +12,7 @@ Criação de uma aplicação interativa que permite aos usuários realizar cota�
 ## Integrantes
 
 * Ayrles Alves De Lima Sales
-* Bruno Olimpio Timóteo
+* Bruno Roberto Olympio Ferreira
 * Guilherme Servelo Da Costa
 * Leandro Furtado De Sousa
 * Leonardo Moreira Franco De Souza
