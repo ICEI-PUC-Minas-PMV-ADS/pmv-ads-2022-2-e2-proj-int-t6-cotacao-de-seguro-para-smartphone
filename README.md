@@ -8,10 +8,6 @@
 
 Criação de uma aplicação interativa que permite aos usuários realizar cotações para segurar seus aparelhos smartphone com melhor custo benefício de plano e franquia e que contemple a assistência técnica 24 horas, cobrindo quebra acidental, perda, danos líquidos ou furto..
 
-## (VIDEO) Problema e solução.
-<li><a href="presentation/apresentacaoSeguro.mp4"> Clique aqui para baixar o video. </a></li>
-OU
-<li><a href="https://drive.google.com/file/d/1A_DAoaRFDwRK2udh6EQ2VF0vo0GgwAUG/view?usp=drivesdk"> Clique aqui para baixar o video. </a></li>
 
 ## Integrantes
 
