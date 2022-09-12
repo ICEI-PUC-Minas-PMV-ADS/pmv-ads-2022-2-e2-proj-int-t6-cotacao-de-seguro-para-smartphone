@@ -27,3 +27,9 @@ Diante dessas evidências apresentadas, a constante sensação de insegurança d
 ## Público-Alvo
 
 Embora todas as pessoas possam se beneficiar de soluções para aquisição do seguro, o foco deste trabalho está no público que possui smartphone com alto valor aquisitivo.
+
+
+## (VIDEO) Problema e solução.
+<li><a href="presentation/apresentacaoSeguro.mp4"> Clique aqui para baixar o video. </a></li>
+OU
+<li><a href="https://drive.google.com/file/d/1A_DAoaRFDwRK2udh6EQ2VF0vo0GgwAUG/view?usp=drivesdk"> Clique aqui para baixar o video. </a></li>
