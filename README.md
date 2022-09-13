@@ -8,20 +8,19 @@
 
 Criação de uma aplicação interativa que permite aos usuários realizar cotações para segurar seus aparelhos smartphone com melhor custo benefício de plano e franquia e que contemple a assistência técnica 24 horas, cobrindo quebra acidental, perda, danos líquidos ou furto..
 
-
 ## Integrantes
 
-* Ayrles Alves De Lima Sales
-* Bruno Olimpio Timóteo
-* Guilherme Servelo Da Costa
-* Leandro Furtado De Sousa
-* Leonardo Moreira Franco De Souza
-* Letícia Amorim Costa
-* Lia Araruna De Lima
+- Ayrles Alves De Lima Sales
+- Bruno Roberto Olympio Ferreira
+- Guilherme Servelo Da Costa
+- Leandro Furtado De Sousa
+- Leonardo Moreira Franco De Souza
+- Letícia Amorim Costa
+- Lia Araruna De Lima
 
 ## Orientador
 
-* Bernardo Jeunon De Alencar
+- Bernardo Jeunon De Alencar
 
 ## Instruções de utilização
 
