@@ -45,7 +45,8 @@ Abaixo as tabelas detalham todos os requisitos funcionais e não funcionais do p
 |RF-008| A aplicação deve permitir ao usuário cadastrado que edite suas informações de cadastro pessoal. | MÉDIA | 
 |RF-009| Após a realização da cotação, a aplicação deve direcionar o usuário diretamente para o whatsapp com algum atendente para finalizar a contratação do seguro. | ALTA | 
 |RF-010| A aplicação deve mostrar os dados de contato da empresa para solicitação de assistência técnica imediata e transferir o usuário para o atendimento 24 horas (WhatsApp). | ALTA | 
-|RF-011| A aplicação deve permitir ao usuário acompanhar o processo de restituição do sinistro. | ALTA | 
+|RF-011| A aplicação deve permitir ao usuário comunicar o sinistro. | ALTA | 
+|RF-012| A aplicação deve permitir ao usuário acompanhar o processo de restituição do sinistro. | ALTA | 
 
 ### Requisitos não Funcionais
 
