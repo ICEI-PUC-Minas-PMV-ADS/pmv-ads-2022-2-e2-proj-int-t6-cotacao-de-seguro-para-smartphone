@@ -1,0 +1,85 @@
+<body>
+  <app-nav></app-nav>
+
+  <div class="container2">
+    <form>
+      <div class="perguntas">
+        <h2 class="title">Faça sua pré-cotação</h2>
+        <br />
+        <div class="info">
+          Escolha a o tipo de veículo:
+          <br>
+          <select id="tipo">
+            <option value="moto">Moto</option>
+            <option value="carro">Carro</option>
+          </select>
+          <br />
+          Digite a marca e o modelo do seu veiculo:
+          <input type="text" name="modelo-veiculo" id="model" />
+          <br />
+          Escolha a opção do valor de tabela FIPE do seu veiculo:
+          <select class="valor" id="valor">
+            <option value="0">R$000,00 - R$10.000,00</option>
+            <option value="1">R$10.001,00 - R$20.000,00</option>
+            <option value="2">R$20.001,00 - R$30.000,00</option>
+            <option value="3">R$30.001,00 - R$40.000,00</option>
+            <option value="4">R$40.001,00 - R$50.000,00</option>
+            <option value="5">R$50.001,00 - R$60.000,00</option>
+            <option value="6">R$60.001,00 - R$70.000,00</option>
+            <option value="7">R$70.001,00 - R$80.000,00</option>
+            <option value="8">R$80.001,00 - R$90.000,00</option>
+            <option value="90">R$90.001,00 ou maior</option>
+          </select>
+        </div>
+      </div>
+      <br />
+      <h4>Agora marque os opcionais desejados:</h4>
+      <div class="opcional">
+        <input type="checkbox" class="checkbox" name="Carro reserva" id="1" />Carro reserva
+        <input type="checkbox" class="checkbox" name="Reboque ilimitado" id="2" />Reboque
+        ilimitado
+        <br />
+        <input class="checkbox" type="checkbox" name="Cobertura para terceiros" id="3" />Cobertura para terceiros
+        <input type="checkbox" class="checkbox" name="Rastreamento e monitoramento" id="4" />Rastreamento e
+        monitoramento
+        <br />
+      </div>
+      <div>
+        <input class="btn btn-dark" type="submit" id="send" value="Fazer cotação" />
+      </div>
+      <div class="valorCotacao">
+      </div>
+    </form>
+  </div>
+
+
+  <footer>
+    <div class="main">
+      <div class="content footer-links">
+        <div class="footer-company">
+          <h3>Contatos:</h3>
+          <h5>Assistencia 24hrs: 0800 923 3294</h5>
+          <h5>WhatsApp Suporte: +55 31 9999-8838</h5>
+        </div>
+        <br>
+        <div class="footer-endereco">
+          <h3>Endereço:</h3>
+          <h5>Rua Solitude Pereira Aragão</h5>
+          <h5>Número: 870 7ºandar</h5>
+        </div>
+        <br>
+        <div class="footer-redes">
+          <h3>Redes sociais:</h3>
+          <div class="redes-icons">
+            <a href="http://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+            <a href="http://web.whatsapp.com" target="_blank"><img href="" src="img/whatsapp.png" alt="Whatsapp"></a>
+            <a href="http://linkedin.com" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="last">
+      <h3>Copyright VProtection 2022 º PUC MINAS </h3>
+    </div>
+  </footer>
+</body>
