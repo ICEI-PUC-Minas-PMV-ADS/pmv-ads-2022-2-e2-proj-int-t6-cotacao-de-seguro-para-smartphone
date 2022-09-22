@@ -26,7 +26,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 
 A tela home é onde vai se concentrar a maior parte das funcionalidades da aplicação web. Pensando em um novo cliente, no topo da página teremos um cabeçalho com o logo da empresa, direcionamento para outras telas e uma barra de navegação que direciona as demais páginas do site.
 
-![image](![image](https://user-images.githubusercontent.com/69984719/191629896-ec36222d-f334-4b83-b43d-785504985818.png))
+![image](imgs-presentation/home.png)
 
 > **Body da Home Page - Breve apresentação da empresa**
 
@@ -36,7 +36,7 @@ A tela home é onde vai se concentrar a maior parte das funcionalidades da aplic
 
 É possível ver os planos que podem ser adquiridos pelo usuário.
 
-![image](![image](https://user-images.githubusercontent.com/69984719/191630141-b331c030-ad3b-4853-a770-c8e21a28a13e.png))
+![image](imgs-presentation/planos.png)
 
 
 > **Opção de proteção para o seu smartphone**
@@ -49,7 +49,7 @@ A tela home é onde vai se concentrar a maior parte das funcionalidades da aplic
 
 Ao clicar no botão abrirá um formulário para preenchimento com opções de marcar, para digitar os dados do cliente e de seu aparelho.
 
-![image](![image](![image](https://user-images.githubusercontent.com/69984719/191630990-f9480bdc-09eb-4830-a336-c3a1271d9929.png)))
+![image](imgs-presentation/cotacao.png)
 
 - Botão para cotar: Apartir dos dados fornecidos o sistema vai gerar um valor para o seguro em mensalidade, já com os valores dos opcionais agregados.
 
@@ -60,7 +60,7 @@ Ao clicar no botão abrirá um formulário para preenchimento com opções de ma
 
 Pode ser acessada pela barra no cabeçalho da página ou vir através da página de cotação.
 
-![image](![image](https://user-images.githubusercontent.com/69984719/191631392-c178568f-fc77-4396-99d8-facb88da7757.png))
+![image](imgs-presentation/logincadastro.png)
 
 - Nesta página você tem os campos para logar com email e senha e os campos para realizar um registro no site.
 - Após clicar em logar, você é redirecionado para página d cliente.
@@ -69,7 +69,7 @@ Pode ser acessada pela barra no cabeçalho da página ou vir através da página
 
 Nessa página terá uma apresentação completa da empresa, contenta visão, missão e valores da mesma.
 
-![image](![image](https://user-images.githubusercontent.com/69984719/191631608-7215bf4c-2593-446a-b08d-99dc766ff7f3.png))
+![image](imgs-presentation/sobre.png)
 
 - Contem alguns botões, mas o principal é o que redireciona para página de avaliações da empresa.
 
@@ -77,13 +77,13 @@ Nessa página terá uma apresentação completa da empresa, contenta visão, mis
 
 Essa página não terá nenhum componente que o cliente possa interagir (somente um botão redirecionando para pagina para que o mesmo possa fazer uma avaliação dos serviçõs por ele contratado), ela vai ter recortes das avaliações feitas por clientes que já aderiram e utilizaram do serviços fornecidos pela empresa. Essencialmente terá uma foto, um comentário e a nota dada.
 
-![image](![image](https://user-images.githubusercontent.com/69984719/191631965-cb1a6ee2-7163-499d-abdf-e63afdae8628.png))
+![image](imgs-presentation/avaliacoes.png)
 
 **Página - Cliente**
 
 A página do cliente contem algumas opções importantes, como a emissão de boletos, atualização de dados, informações sobre o plano contratado e situação de sinistros. Contem um botão com o redirecionamento para pagina de realização de avaliações sobre o plano contratado.
 
-![image](![image](https://user-images.githubusercontent.com/69984719/191632408-e5ca6138-dbb2-48bf-85a5-a94ba4ced5b9.png))
+![image](imgs-presentation/userlogged.png)
 
 - Botão de imprimir segunda via de boletos.
 - Botão de atualiação de dados contendo um formulário para a inserção dos novos dados.
