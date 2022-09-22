@@ -26,7 +26,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 
 A tela home é onde vai se concentrar a maior parte das funcionalidades da aplicação web. Pensando em um novo cliente, no topo da página teremos um cabeçalho com o logo da empresa, direcionamento para outras telas e uma barra de navegação que direciona as demais páginas do site.
 
-![image](https://user-images.githubusercontent.com/86278628/164995051-48db883e-a137-44d4-9b36-bc3ed9a6b9dc.png)
+![image](![image](https://user-images.githubusercontent.com/69984719/191629896-ec36222d-f334-4b83-b43d-785504985818.png))
 
 > **Body da Home Page - Breve apresentação da empresa**
 
@@ -34,40 +34,33 @@ A tela home é onde vai se concentrar a maior parte das funcionalidades da aplic
 
 **Página - Planos de proteção**
 
-É possível ver todos os opcionais que a empresa fornece para cada plano. Ao clicar em alguma das opções, você é redirecionado para página de cotação.
+É possível ver os planos que podem ser adquiridos pelo usuário.
 
-![image](https://user-images.githubusercontent.com/86278628/164995227-0efdfc84-cbf3-443b-9dd5-bcc427e544d9.png)
+![image](![image](https://user-images.githubusercontent.com/69984719/191630141-b331c030-ad3b-4853-a770-c8e21a28a13e.png))
 
 
-> **Opção de proteção para carro**
+> **Opção de proteção para o seu smartphone**
 - Furto
 - Roubo
 - Vidros trincados
-- Guincho (Assistência 24|| Ottoni)
-- Carro reserva
-- Colisão
-
-> **Opção de proteção para moto**
-- Furto
-- Roubo
-- Assistência 24h
-- Colisão
+- Quebra em geral
 
 **Página - Cotação**
 
-Ao clicar no botão abrirá um formulário para preenchimento com opções de marcar, para digitar os dados do cliente.
+Ao clicar no botão abrirá um formulário para preenchimento com opções de marcar, para digitar os dados do cliente e de seu aparelho.
 
-![image](https://user-images.githubusercontent.com/86278628/164995409-56c04657-e874-4a55-a52f-8aa24003acd4.png)
+![image](![image](![image](https://user-images.githubusercontent.com/69984719/191630990-f9480bdc-09eb-4830-a336-c3a1271d9929.png)))
 
-- Botão para cotar: Apartir dos dados fornecidos o sistema vai gerar um valor para a proteção, já com os valores dos opcionais agregados.
+- Botão para cotar: Apartir dos dados fornecidos o sistema vai gerar um valor para o seguro em mensalidade, já com os valores dos opcionais agregados.
 
 - Botão para contratação: Após a cotação o cliente já pode contratar o serviço. (Caso o cliente não esteja logado um pop-up é aberto com a opção de login/cadastro)
+
 
 **Página - Login/Cadastro**
 
 Pode ser acessada pela barra no cabeçalho da página ou vir através da página de cotação.
 
-![image](https://user-images.githubusercontent.com/86278628/164995578-842b5e18-a958-4d11-99e1-5519ac8f1bc1.png)
+![image](![image](https://user-images.githubusercontent.com/69984719/191631392-c178568f-fc77-4396-99d8-facb88da7757.png))
 
 - Nesta página você tem os campos para logar com email e senha e os campos para realizar um registro no site.
 - Após clicar em logar, você é redirecionado para página d cliente.
@@ -76,7 +69,7 @@ Pode ser acessada pela barra no cabeçalho da página ou vir através da página
 
 Nessa página terá uma apresentação completa da empresa, contenta visão, missão e valores da mesma.
 
-![image](https://user-images.githubusercontent.com/86278628/164995815-cdcdedc8-5c76-4423-af1d-12ad9504dc20.png)
+![image](![image](https://user-images.githubusercontent.com/69984719/191631608-7215bf4c-2593-446a-b08d-99dc766ff7f3.png))
 
 - Contem alguns botões, mas o principal é o que redireciona para página de avaliações da empresa.
 
@@ -84,15 +77,16 @@ Nessa página terá uma apresentação completa da empresa, contenta visão, mis
 
 Essa página não terá nenhum componente que o cliente possa interagir (somente um botão redirecionando para pagina para que o mesmo possa fazer uma avaliação dos serviçõs por ele contratado), ela vai ter recortes das avaliações feitas por clientes que já aderiram e utilizaram do serviços fornecidos pela empresa. Essencialmente terá uma foto, um comentário e a nota dada.
 
-![image](https://user-images.githubusercontent.com/86278628/164995951-34dcc63b-b834-4a8e-b456-ad8f70446e2a.png)
+![image](![image](https://user-images.githubusercontent.com/69984719/191631965-cb1a6ee2-7163-499d-abdf-e63afdae8628.png))
 
 **Página - Cliente**
 
-A página do cliente contem algumas opções importantes, como a emissão de boletos, atualização de dados e informações sobre o plano contratado. Contem um botão com o redirecionamento para pagina de realização de avaliações sobre o plano contratado.
+A página do cliente contem algumas opções importantes, como a emissão de boletos, atualização de dados, informações sobre o plano contratado e situação de sinistros. Contem um botão com o redirecionamento para pagina de realização de avaliações sobre o plano contratado.
 
-![image](https://user-images.githubusercontent.com/86278628/164996090-96f8da1a-1525-42c6-955e-fa17a2c0db64.png)
+![image](![image](https://user-images.githubusercontent.com/69984719/191632408-e5ca6138-dbb2-48bf-85a5-a94ba4ced5b9.png))
 
 - Botão de imprimir segunda via de boletos.
 - Botão de atualiação de dados contendo um formulário para a inserção dos novos dados.
 - Tela lateral com as informações do plano contratado.
 - Botão de redirecionamento para a realização de avaliações.
+- Situação do sinistros (SE HOUVER)
