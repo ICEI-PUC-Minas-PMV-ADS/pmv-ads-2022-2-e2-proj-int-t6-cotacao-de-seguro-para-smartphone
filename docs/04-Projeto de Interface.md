@@ -26,7 +26,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 
 A tela home é onde vai se concentrar a maior parte das funcionalidades da aplicação web. Pensando em um novo cliente, no topo da página teremos um cabeçalho com o logo da empresa, direcionamento para outras telas e uma barra de navegação que direciona as demais páginas do site.
 
-![image](./imgs-presentation/home.png)
+![image](home.png)
 
 > **Body da Home Page - Breve apresentação da empresa**
 
@@ -36,7 +36,7 @@ A tela home é onde vai se concentrar a maior parte das funcionalidades da aplic
 
 É possível ver os planos que podem ser adquiridos pelo usuário.
 
-![image](docs/imgs-presentation/planos.png)
+![image](planos.png)
 
 
 > **Opção de proteção para o seu smartphone**
@@ -49,7 +49,7 @@ A tela home é onde vai se concentrar a maior parte das funcionalidades da aplic
 
 Ao clicar no botão abrirá um formulário para preenchimento com opções de marcar, para digitar os dados do cliente e de seu aparelho.
 
-![image](docs/imgs-presentation/cotacao.png)
+![image](cotacao.png)
 
 - Botão para cotar: Apartir dos dados fornecidos o sistema vai gerar um valor para o seguro em mensalidade, já com os valores dos opcionais agregados.
 
@@ -60,7 +60,7 @@ Ao clicar no botão abrirá um formulário para preenchimento com opções de ma
 
 Pode ser acessada pela barra no cabeçalho da página ou vir através da página de cotação.
 
-![image](docs/imgs-presentation/logincadastro.png)
+![image](logincadastro.png)
 
 - Nesta página você tem os campos para logar com email e senha e os campos para realizar um registro no site.
 - Após clicar em logar, você é redirecionado para página d cliente.
@@ -69,7 +69,7 @@ Pode ser acessada pela barra no cabeçalho da página ou vir através da página
 
 Nessa página terá uma apresentação completa da empresa, contenta visão, missão e valores da mesma.
 
-![image](docs/imgs-presentation/sobre.png)
+![image](sobre.png)
 
 - Contem alguns botões, mas o principal é o que redireciona para página de avaliações da empresa.
 
@@ -77,13 +77,13 @@ Nessa página terá uma apresentação completa da empresa, contenta visão, mis
 
 Essa página não terá nenhum componente que o cliente possa interagir (somente um botão redirecionando para pagina para que o mesmo possa fazer uma avaliação dos serviçõs por ele contratado), ela vai ter recortes das avaliações feitas por clientes que já aderiram e utilizaram do serviços fornecidos pela empresa. Essencialmente terá uma foto, um comentário e a nota dada.
 
-![image](docs/imgs-presentation/avaliacoes.png)
+![image](avaliacoes.png)
 
 **Página - Cliente**
 
 A página do cliente contem algumas opções importantes, como a emissão de boletos, atualização de dados, informações sobre o plano contratado e situação de sinistros. Contem um botão com o redirecionamento para pagina de realização de avaliações sobre o plano contratado.
 
-![image](docs/imgs-presentation/userlogged.png)
+![image](userlogged.png)
 
 - Botão de imprimir segunda via de boletos.
 - Botão de atualiação de dados contendo um formulário para a inserção dos novos dados.
