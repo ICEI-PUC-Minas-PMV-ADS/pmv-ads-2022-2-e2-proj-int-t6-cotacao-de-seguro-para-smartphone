@@ -1,0 +1,105 @@
+/* importação de fonte */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+
+/* a tag (*) significa que o estilo/ formatação será aplicado em tudo */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Lato";
+}
+
+
+/* DEFININDO CORES */
+:root {
+    --blue: #7bffff;
+    --black: black;
+    --gray: gray;
+}
+
+/* Trabalhando no Body e no html */
+html,
+body {
+    width: 100%;
+    /* Largura de 100% */
+    overflow-x: initial !important;
+    /* Esconde a barra de rolagem da horizontal (hide bar) */
+    background-color: #7a7a7a;
+}
+
+/* Estilizando o cabeçalho
+Porcentagem --> O tamanho é referido ao elemento pai da classe
+Px(Pixel) --> O tamanho é fixo independente.
+*/
+header {
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    padding-bottom: 52%;
+}
+
+
+/* Utilizando tamanhos e alturas RESPONSÍVAS */
+.content {
+    max-width: 1000px;
+    /* Se estiver espaço O MAXIMO É 1000px */
+    min-width: 300px;
+    /* Se não estiver espaço O MINIMO é 700px */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 200px;
+}
+
+.content .header-block {
+    max-width: 1000px;
+    min-width: 300px;
+    height: 600px;
+    background-image: url(src/assets/img/backgroundImage.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 30%;
+    border-radius: 8px;
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.8);
+    /* ADICIONA SOMBRA NA BORDA/CAIXA */
+
+    -moz-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.8);
+
+    position: relative;
+    z-index: 10;
+    padding: 20px;
+}
+
+.header-block .text {
+    position: absolute;
+    padding-top: 2%;
+    left: 5%;
+
+}
+
+.header-block .text h2 {
+    font-family: "Lato";
+    font-size: 40px;
+    color: black;
+    text-shadow: 2px 3px 5px #ece8ea;
+    margin-bottom: 3px;
+    text-align: left;
+    transform: translateY(10px);
+    transition: transform 4s;
+}
+
+.header-block .text p {
+    max-width: 340px;
+    font-size: 25px;
+    text-shadow: 2px 3px 5px #ece8ea;
+    color: black;
+    text-align: left;
+    transform: translateY(20px);
+    transition: transform 4s;
+}
