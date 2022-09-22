@@ -36,7 +36,7 @@ A tela home é onde vai se concentrar a maior parte das funcionalidades da aplic
 
 É possível ver os planos que podem ser adquiridos pelo usuário.
 
-![image](planos.png)
+![foto](imgs-presentation/planos.png)
 
 
 > **Opção de proteção para o seu smartphone**
