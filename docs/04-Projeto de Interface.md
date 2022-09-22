@@ -26,7 +26,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 
 A tela home é onde vai se concentrar a maior parte das funcionalidades da aplicação web. Pensando em um novo cliente, no topo da página teremos um cabeçalho com o logo da empresa, direcionamento para outras telas e uma barra de navegação que direciona as demais páginas do site.
 
-![image](docs/imgs-presentation/home.png)
+![image](./imgs-presentation/home.png)
 
 > **Body da Home Page - Breve apresentação da empresa**
 
