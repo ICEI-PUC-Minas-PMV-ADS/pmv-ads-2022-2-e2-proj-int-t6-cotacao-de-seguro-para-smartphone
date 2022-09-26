@@ -1,0 +1,308 @@
+/* importação de fonte */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+
+/* a tag (*) significa que o estilo/ formatação será aplicado em tudo */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Lato";
+}
+
+/* DEFININDO CORES */
+:root {
+    --blue: #7bffff;
+    --black: black;
+    --gray: gray;
+}
+
+/* Trabalhando no Body e no html */
+html,
+body {
+    width: 100%;
+    /* Largura de 100% */
+    overflow-x: initial !important;
+    /* Esconde a barra de rolagem da horizontal (hide bar) */
+    background-color: #fff;
+}
+
+/* Estilizando o cabeçalho
+Porcentagem --> O tamanho é referido ao elemento pai da classe
+Px(Pixel) --> O tamanho é fixo independente.
+*/
+header {
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    padding-bottom: 80%;
+}
+
+
+/* Utilizando tamanhos e alturas RESPONSÍVAS */
+.content {
+    max-width: 1000px;
+    /* Se estiver espaço O MAXIMO É 1000px */
+    min-width: 300px;
+    /* Se não estiver espaço O MINIMO é 300px */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.header-block img {
+    width: 60%;
+    position: absolute;
+    right: 2%;
+
+}
+
+nav {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.brand {
+    position: relative;
+    right: 80px;
+    font-size: 50px;
+    color: var(--black);
+    text-decoration: none;
+    /* Retira o risco do texto */
+}
+
+.brand:hover {
+    transition: 1s;
+    font-size: 60px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+nav ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 20px;
+}
+
+/* Edita os botões criados no cabeçalho */
+nav ul li a {
+    text-decoration: none;
+    color: #1C1C1C;
+    font-size: 17px;
+}
+
+nav img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Edita os botões criados no cabeçalho quando o mouse passa em cima (:hover) */
+nav ul li a:hover {
+    transition: 1s;
+    text-decoration: none;
+    color: #1C1C1CA3;
+    font-size: 20px;
+}
+
+.content .header-block {
+    max-width: 1000px;
+    min-width: 300px;
+    height: 500px;
+    background-image: url(src/assets/img/backgroundImage2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.8);
+    /* ADICIONA SOMBRA NA BORDA/CAIXA */
+
+    -moz-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.8);
+
+    position: relative;
+    z-index: 10;
+    padding-bottom: 850px;
+}
+
+.header-block .text {
+    position: absolute;
+    padding-top: 2%;
+    left: 5%;
+
+}
+
+.header-block .text h2 {
+    font-family: "Lato";
+    color: black;
+    margin-bottom: 3px;
+    text-align: left;
+    transform: translateY(10px);
+    transition: transform 4s;
+}
+
+.header-block .text p {
+    max-width: 340px;
+    font-size: large;
+    color: black;
+    text-align: left;
+    transform: translateY(20px);
+    transition: transform 4s;
+}
+
+footer {
+    background-color: #7a7a7a;
+    width: 100%;
+    height: 50%;
+}
+
+footer .main {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+}
+
+.footer-links {
+    max-width: 1000px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.footer-redes {
+    max-width: 1000px;
+    min-width: 300px;
+    display: flex;
+    padding-left: 100px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-endereco {
+    max-width: 1000px;
+    min-width: 300px;
+    padding-left: 100px;
+}
+
+.redes-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+footer .last {
+    background-color: #7a7a7a;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.sua-protecao {
+    font-size: 23px;
+    color: aqua;
+    border-color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+.sua-protecao h2 {
+    font-family: "Lato";
+    color: black;
+}
+
+
+/* ==========TRABALHE CONOSCO============= */
+
+.header-block .form-description {
+    color: white;
+    text-shadow: 2px 3px 5px red;
+    display: flex;
+    position: relative;
+    left: 140px;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 33px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.content nav h2 {
+    color: black;
+    font-size: 30px;
+
+}
+
+.header-block .formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 33px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.header-block .formulario .inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-block .formulario .inputs input {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header-block .formulario .box {
+    background-image: linear-gradient(to right, white, rgb(112, 110, 110));
+    padding: 15px;
+    border-radius: 40px;
+    border: 3px solid black;
+}
+
+
+
+.header-block .formulario legend {
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 10px;
+    background-image: linear-gradient(to right, white, rgb(112, 110, 110));
+    text-align: center;
+}
+
+
+.header-block .formulario .enviar {
+    font-size: 18px;
+    padding-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 11px;
+    background-image: linear-gradient(to right, white, rgb(102, 2, 2));
+    text-align: center;
+}
+
+#data {
+    border-radius: 30px;
+    border: 2px solid black;
+    padding: 11px;
+}
+
+.header-block .formulario .enviarBtn {
+    display: flex;
+    justify-content: center;
+
+}
+
+#enviar {
+    width: 100%;
+    cursor: pointer;
+}

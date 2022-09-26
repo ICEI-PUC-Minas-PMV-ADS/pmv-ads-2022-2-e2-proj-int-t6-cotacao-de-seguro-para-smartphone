@@ -10,6 +10,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { CotacaoComponent } from './components/cotacao/cotacao.component';
 import { LoginComponent } from './components/login/login.component';
 import { SobreComponent } from './components/sobre/sobre.component';
+import { TrabalheConoscoComponent } from './components/trabalhe-conosco/trabalhe-conosco.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SobreComponent } from './components/sobre/sobre.component';
     FooterComponent,
     CotacaoComponent,
     LoginComponent,
-    SobreComponent
+    SobreComponent,
+    TrabalheConoscoComponent
   ],
   imports: [
     ReactiveFormsModule,
