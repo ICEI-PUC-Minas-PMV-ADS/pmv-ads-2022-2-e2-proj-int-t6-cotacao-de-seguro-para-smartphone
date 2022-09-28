@@ -60,9 +60,9 @@ header {
     max-width: 1000px;
     min-width: 300px;
     height: 600px;
-    background-image: url(src/assets/img/backgroundImage.jpg);
+    background-image: url(src/assets/img/sobreImage.jpeg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 150%;
     background-position-y: 30%;
     border-radius: 8px;
     box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.8);
@@ -86,7 +86,7 @@ header {
 .header-block .text h2 {
     font-family: "Lato";
     font-size: 40px;
-    color: black;
+    color: blue;
     text-shadow: 2px 3px 5px #ece8ea;
     margin-bottom: 3px;
     text-align: left;
@@ -98,7 +98,7 @@ header {
     max-width: 340px;
     font-size: 25px;
     text-shadow: 2px 3px 5px #ece8ea;
-    color: black;
+    color: blue;
     text-align: left;
     transform: translateY(20px);
     transition: transform 4s;

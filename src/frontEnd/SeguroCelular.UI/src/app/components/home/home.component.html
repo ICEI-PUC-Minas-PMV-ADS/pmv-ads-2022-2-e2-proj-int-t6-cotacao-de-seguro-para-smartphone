@@ -12,10 +12,10 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="assets/img/slide1.png" alt="Cotação 1" class="d-block w-100">
+        <img src="assets/img/slide1_new.jpg" alt="Cotação 1" class="d-block w-100">
         <div class="carousel-caption">
           <h5>Fique Despreocupado</h5>
-          <a href="cotacao.html" class="btn btn-dark">Fazer Cotação</a>
+          <a [routerLink]="['/cotacao']" class="btn btn-dark">Fazer Cotação</a>
         </div>
       </div>
       <div class="carousel-item">
@@ -53,7 +53,7 @@
             <p class="card-text secondary-color">Oferecer transparência, honestidade e excelência de
               qualidade na prestação de serviços de seguros...
             </p>
-            <a href="sobrenos.html" class="btn btn-dark">Saber Mais</a>
+            <a [routerLink]="['/sbre']" class="btn btn-dark">Saber Mais</a>
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@
             <p class="card-text secondary-color">Ser líder e inovadora na prestação de serviços de
               seguros, referência na gestão do conhecimento...
             </p>
-            <a href="sobrenos.html" class="btn btn-dark">Saber Mais</a>
+            <a [routerLink]="['/sobre']" class="btn btn-dark">Saber Mais</a>
           </div>
         </div>
       </div>
@@ -78,7 +78,7 @@
               transparência são os valores que norteiam as atividades e os colaboradores da V
               Protection.
             </p>
-            <a href="sobrenos.html" class="btn btn-dark">Saber Mais</a>
+            <a [routerLink]="['/cotacao']" class="btn btn-dark">Saber Mais</a>
           </div>
         </div>
       </div>
