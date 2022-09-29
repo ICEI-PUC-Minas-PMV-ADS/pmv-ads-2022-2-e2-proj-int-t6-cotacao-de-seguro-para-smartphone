@@ -11,6 +11,7 @@ import { CotacaoComponent } from './components/cotacao/cotacao.component';
 import { LoginComponent } from './components/login/login.component';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { TrabalheConoscoComponent } from './components/trabalhe-conosco/trabalhe-conosco.component';
+import { AvaliacoesComponent } from './components/avaliacoes/avaliacoes.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TrabalheConoscoComponent } from './components/trabalhe-conosco/trabalhe
     CotacaoComponent,
     LoginComponent,
     SobreComponent,
-    TrabalheConoscoComponent
+    TrabalheConoscoComponent,
+    AvaliacoesComponent
   ],
   imports: [
     ReactiveFormsModule,

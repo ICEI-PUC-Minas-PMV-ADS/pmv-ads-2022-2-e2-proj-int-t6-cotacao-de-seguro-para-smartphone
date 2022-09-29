@@ -1,3 +1,4 @@
+import { AvaliacoesComponent } from './components/avaliacoes/avaliacoes.component';
 import { TrabalheConoscoComponent } from './components/trabalhe-conosco/trabalhe-conosco.component';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { LoginComponent } from './components/login/login.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'sobre', component: SobreComponent },
   { path: 'trabalhe-conosco', component: TrabalheConoscoComponent },
+  { path: 'avaliacoes', component: AvaliacoesComponent },
 ];
 
 @NgModule({

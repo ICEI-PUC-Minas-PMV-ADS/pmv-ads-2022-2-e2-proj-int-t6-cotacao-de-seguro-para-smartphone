@@ -1,0 +1,87 @@
+<div class="nav">
+  <app-nav></app-nav>
+</div>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Modelo Celular</th>
+        <th scope="col">Avaliação</th>
+        <th scope="col">Nota(0 a 5)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Gabriel Fernandes</td>
+        <td>Moto g3</td>
+        <td>Gostei, fui roubado e em uma semana tive meu celular reembolsado</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>IPhone 13</td>
+        <td>Excelente atendimento, não me arrependo</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Lucas</td>
+        <td>Xiaomi MI</td>
+        <td>Um pouco insatisfeito com a demora no atendimento</td>
+        <td>2</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="container-form">
+  <h5 align="center">Faça sua Avaliação</h5>
+  <hr />
+  <form novalidate [formGroup]="cadastroForm">
+    <div class="form-horizontal">
+
+      <div class="form-group">
+        <label class="col-md-2 control-label" for="nome">Nome</label>
+        <div class="col-md-10">
+          <input class="form-control" id="nome" type="text" placeholder="Nome" formControlName="nome" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-2 control-label" for="nome">Modelo</label>
+        <div class="col-md-10">
+          <input class="form-control" id="nome" type="text" placeholder="Modelo Celular" formControlName="nome" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-2 control-label" for="nome">Avaliação</label>
+        <div class="col-md-10">
+          <input class="form-control" id="nome" type="text" placeholder="Avalie" formControlName="nome" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-2 control-label" for="nome">Nota</label>
+        <div class="col-md-10">
+          <input class="form-control" id="nome" type="number" placeholder="Nota (0 a 5)" formControlName="nome" />
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <div class="col-md-4 col-md-offset-2">
+          <span><button class="btn btn-success mt-3" id="Registrar" [disabled]="!cadastroForm.valid"
+              type="submit">Enviar</button></span>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<app-footer></app-footer>
