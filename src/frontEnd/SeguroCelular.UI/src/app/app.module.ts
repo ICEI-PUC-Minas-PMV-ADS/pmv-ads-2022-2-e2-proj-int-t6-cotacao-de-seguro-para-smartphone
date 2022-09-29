@@ -10,7 +10,6 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { CotacaoComponent } from './components/cotacao/cotacao.component';
 import { LoginComponent } from './components/login/login.component';
 import { SobreComponent } from './components/sobre/sobre.component';
-import { TrabalheConoscoComponent } from './components/trabalhe-conosco/trabalhe-conosco.component';
 import { AvaliacoesComponent } from './components/avaliacoes/avaliacoes.component';
 
 @NgModule({
@@ -22,7 +21,6 @@ import { AvaliacoesComponent } from './components/avaliacoes/avaliacoes.componen
     CotacaoComponent,
     LoginComponent,
     SobreComponent,
-    TrabalheConoscoComponent,
     AvaliacoesComponent
   ],
   imports: [
