@@ -2,6 +2,8 @@ import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +13,7 @@ import { CotacaoComponent } from './components/cotacao/cotacao.component';
 import { LoginComponent } from './components/login/login.component';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { AvaliacoesComponent } from './components/avaliacoes/avaliacoes.component';
+import { CadastroClienteComponent } from './components/cadastro-cliente/cadastro-cliente.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +24,15 @@ import { AvaliacoesComponent } from './components/avaliacoes/avaliacoes.componen
     CotacaoComponent,
     LoginComponent,
     SobreComponent,
-    AvaliacoesComponent
+    AvaliacoesComponent,
+    CadastroClienteComponent
   ],
   imports: [
     ReactiveFormsModule,
     AppRoutingModule,
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
   exports: [
     NavComponent,

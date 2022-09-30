@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit {
 
   Login() {
     if (this.loginForm.get('email').value == this.emailDB && this.loginForm.get('senha').value == this.senhaDB) {
-      this.router.navigate(["/home"]);;
+      this.router.navigate(["/home"]);
     } else {
       this.mensagem = "E-mail ou a senha estar errado!";
     }

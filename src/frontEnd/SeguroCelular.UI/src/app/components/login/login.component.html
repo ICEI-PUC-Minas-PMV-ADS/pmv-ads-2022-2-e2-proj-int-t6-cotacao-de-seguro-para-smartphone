@@ -31,6 +31,12 @@
     <div>
       <button class="input-submit" [disabled]="!loginForm.valid"> Logar </button>
     </div>
+    <div class="mt-2">
+      <a class="link-primary" [routerLink]="['/cadastro-cliente']">Ainda não é cadastrado? Cadastre-se aqui</a>
+    </div>
+    <div class="mt-2">
+      <a class="link-danger" [routerLink]="['/cadastro-cliente']">Esqueci minha senha</a>
+    </div>
 
   </form>
 

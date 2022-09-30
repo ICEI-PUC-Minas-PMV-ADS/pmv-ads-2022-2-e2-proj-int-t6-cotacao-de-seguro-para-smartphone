@@ -1,3 +1,4 @@
+import { CadastroClienteComponent } from './components/cadastro-cliente/cadastro-cliente.component';
 import { AvaliacoesComponent } from './components/avaliacoes/avaliacoes.component';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { LoginComponent } from './components/login/login.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'sobre', component: SobreComponent },
   { path: 'avaliacoes', component: AvaliacoesComponent },
+  { path: 'cadastro-cliente', component: CadastroClienteComponent },
 ];
 
 @NgModule({

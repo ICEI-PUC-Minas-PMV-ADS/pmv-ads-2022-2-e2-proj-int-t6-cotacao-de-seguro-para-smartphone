@@ -1,0 +1,66 @@
+<div class="main_container">
+  <h1><strong>Protect</strong>Cell</h1>
+  <div class="form_container">
+    <form [formGroup]="telacadastroForm" autocomplete="off">
+      <div class="aprensentacao">
+        <h2>Criar um novo usuario</h2>
+        <h4>Todos os campos tirando o Numero de Celular são Obrigatorios!</h4>
+      </div>
+      <hr>
+      <div class="formulario">
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">CPF</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" formControlName="cPF">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Nome</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" formControlName="nome">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Sobrenome</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputEmail3" formControlName="sobrenome">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">E-mail</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" formControlName="email">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Data de Nascimento</label>
+          <div class="col-sm-10">
+            <input type="date" class="form-control" formControlName="dataNascimento">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Endereco</label>
+          <div class="col-sm-10">
+            <input type="datetime" class="form-control" formControlName="endereco">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Senha</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3" formControlName="senha">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Confirme a Senha</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" formControlName="confimeSenha">
+          </div>
+        </div>
+        <button type="submit" class="btn-cadastrar" (click)="NovoCadastro()"
+          [disabled]="!telacadastroForm.valid">Cadastrar</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="mt-10">
+</div>
