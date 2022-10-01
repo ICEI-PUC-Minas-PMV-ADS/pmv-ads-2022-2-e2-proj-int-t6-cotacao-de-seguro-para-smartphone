@@ -52,7 +52,7 @@ Pode ser acessada pela barra no cabeçalho da página ou vir através da página
 ![image](img/logincadastro.png)
 
 - Nesta página você tem os campos para logar com email e senha e os campos para realizar um registro no site.
-- Após clicar em logar, você é redirecionado para página d cliente.
+- Após clicar em logar, você será redirecionado para página do cliente.
 
 **Página - Sobre a empresa**
 
