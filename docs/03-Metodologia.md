@@ -21,6 +21,7 @@ Utilizando metodologias ágeis conforme o scrum, a equipe de projeto ficou divid
 #### Equipe de desenvolvimento:
 - Bruno Roberto Olympio Ferreira
 - Leonardo Moreira Franco De Souza
+- Guilherme Servelo Da Costa
 #### Equipe de Design:
 - Lia Araruna De Lima
 - Leandro Furtado de Sousa
