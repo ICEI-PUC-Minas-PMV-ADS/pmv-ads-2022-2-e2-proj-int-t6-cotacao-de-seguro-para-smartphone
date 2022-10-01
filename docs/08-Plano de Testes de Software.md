@@ -1,31 +1,27 @@
 # Plano de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
+Os requisitos para realização dos testes de software são:
+- Site publicado na Internet
+- Navegador da Internet - Chrome, Firefox ou Edge
+- Conectividade de Internet para acesso às plataformas (APISs)
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
-
-Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o(s) requisito(s) associado(s) a cada um deles está(ão) correto(s) - de acordo com o que foi definido na seção "2 - Especificação do Projeto". 
-
-Por exemplo:
+Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
  
-| **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
+| **Caso de Teste** 	| **CT-01 - Realizar cotação de seguro** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
-| Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
-|Critério de Êxito | - O cadastro foi realizado com sucesso. |
+|	Requisito Associado 	| RF-01 - A aplicação deve conter e permitir ao usuário a realização de uma cotação de seguro de forma precisa e sem complexidade. <br>RF-02 - A aplicação deve permitir que o usuário realize o seu cadastro a partir dos seus dados pessoais e os dados do seu smartphone (ano de fabricação, modelo, marca e tempo de uso).<br>RF-07- A aplicação deve mostrar em sua tela inicial alguns tipos de coberturas que a empresa oferece.<br>RF-09- Após a realização da cotação, o usuário poderá optar por ser direcionado para o whatsapp com algum atendente para finalizar a contratação do seguro.|
+| Objetivo do Teste 	| Apresentar para o usuário a cotação do seguro feita. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site<br> - Realizar cadastro do usuário e cadastro do smartphone <br> - Escolher um dos planos oferecidos<br> - Cotar |
+|Critério de Êxito | - Apresentar para o usuário a cotação do seguro feita com base no modelo do smartphone e as opções de planos de seguro oferecidos, permitindo que ele opte por ser direcionado para o Whatsapp a fim de realizar a contratação do seguro.  |
 |  	|  	|
-| Caso de Teste 	| CT-02 – Efetuar login	|
-|Requisito Associado | RF-00Y	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" |
-|Critério de Êxito | - O login foi realizado com sucesso. |
-
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+| **Caso de Teste**	| **CT-02 - Acessar a área do cliente**	|
+|Requisito Associado | RF-03 - A aplicação deve permitir que o usuário acesse sua área do cliente a partir do uso de login e senha.<br>RF-04 - A aplicação deve mostrar para usuários logados suas mensalidades a vencer (se houver um plano adquirido).<br>RF-06- A aplicação deve permitir que os usuários cadastrados avaliem a qualidade do serviço prestado.<br>RF-08- A aplicação deve permitir ao usuário cadastrado que edite suas informações de cadastro pessoal.<br>RF-10- A aplicação deve permitir ao usuário cancelar o seguro.<br>RF-12- A aplicação deve permitir ao usuário comunicar o sinistro, seja para reparo ou reembolso.<br>RF-13- A aplicação deve permitir ao usuário acompanhar o processo de restituição do sinistro.<br>RF-14- A aplicação deve permitir ao usuário realizar a recuperação da senha de acesso.  |
+| Objetivo do Teste 	| Acessar a área do cliente a fim de visualizar as mensalidades, pagar seguro, solicitar cancelamento, comunicar sinistro e avaliar o serviço prestado.  |
+| Passos 	| - Acessar o Navegador<br>- Informar o endereço do site<br>- Efetuar login com usuário e senha<br>- Editar informações do cadastro<br>- Consultar as mensalidades<br>- Realizar o pagamento da mensalidade<br>- Comunicar e acompanhar sinistro<br>- Solicitar o cancelamento do seguro<br>- Avaliar serviço<br>- Recuperar senha de acesso |
+|Critério de Êxito | Permitir ao usuário realizar o login no site, editar suas informações cadastrais e recuperação de senha de acesso, consultar suas mensalidades, realizar o pagamento do seguro, permitir que o sinistro seja comunicado e acompanhado, permitir que o plano adquirido seja cancelado e que o serviço seja avaliado. |
+|  	|  	|
+| **Caso de Teste**	| **CT-03 - Consultar informações da seguradora.**	|
+|Requisito Associado | RF-05 - A aplicação deve entregar a visualização das informações sobre a empresa e sua história ao usuário.<br>RF-11- A aplicação deve mostrar os dados de contato da empresa para solicitação de assistência técnica imediata e transferir o usuário para o atendimento 24 horas (WhatsApp)|
+| Objetivo do Teste 	| Permitir que seja visualizado informações correspondentes a empresa. 
+| Passos 	|- Acessar o Navegador<br>- Informar o endereço do site<br>- Apresentar na tela inicial sobre a empresa e história de usuários. <br>- Apresentar os dados para contato|
+|Critério de Êxito | Apresentar para o usuário informações sobre a empresa e histórias de usuários, dados para contato e direcionamento para o WhatsApp a fim de falar com um atendente.  |
