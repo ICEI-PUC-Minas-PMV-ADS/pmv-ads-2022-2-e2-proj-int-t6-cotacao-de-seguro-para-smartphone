@@ -11,7 +11,7 @@ O diagrama de fluxo apresentado na Figura abaixo mostra o fluxo de interação d
 
 ## Wireframes
 
-### **Tela - Home-Page**
+**Tela - Home-Page**
 
 A tela Home-Page irá concentrar a maior parte das funcionalidades da aplicação web. Pensando em um novo cliente, no topo da tela teremos um cabeçalho com o logo da empresa, uma barra de Menu que direciona as demais telas do site e o conteúdo central a ser apresentado de acordo com o Menu acessado. 
 
@@ -40,9 +40,9 @@ Ao clicar no botão abrirá um formulário para preenchimento com opções de ma
 
 ![image](img/cotacao.png)
 
-- Botão para cotar: Apartir dos dados fornecidos o sistema vai gerar um valor para o seguro em mensalidade, já com os valores dos opcionais agregados.
+- Botão para cotar: A partir dos dados fornecidos o sistema vai gerar um valor para o seguro em mensalidade, já com os valores dos opcionais agregados.
 
-- Botão para contratação: Após a cotação o cliente já pode contratar o serviço. (Caso o cliente não esteja logado um pop-up é aberto com a opção de login/cadastro)
+- Botão para contratação: Após a cotação o cliente já pode contratar o serviço. (Caso o cliente não esteja logado um pop-up é aberto com a opção de login/cadastro).
 
 
 **Tela - Login/Cadastro**
