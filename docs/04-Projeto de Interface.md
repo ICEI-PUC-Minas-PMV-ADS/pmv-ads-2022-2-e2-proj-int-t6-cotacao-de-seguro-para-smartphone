@@ -56,7 +56,7 @@ Pode ser acessada pela barra no cabeçalho da página ou vir através da página
 
 **Página - Sobre a empresa**
 
-Nessa página terá uma apresentação completa da empresa, contenta visão, missão e valores da mesma.
+Nessa página terá uma apresentação completa da empresa, contemplando visão, missão e valores da mesma.
 
 ![image](img/sobre.png)
 
