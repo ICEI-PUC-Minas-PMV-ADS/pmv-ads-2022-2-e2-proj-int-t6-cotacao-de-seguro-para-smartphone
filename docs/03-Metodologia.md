@@ -1,9 +1,7 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+A metodologia a ser utilizada é de metodologia agil(SCRUM) onde toda entrega é com transparência, uma inspeção constante de tudo que está sendo feito aos poucos. Ambiente de trabalho é de reuniões realizada pela equipe via Teams para esclarecimento de dúvidas, sugestões para o projeto e apresentações dos artefatos. Sendo todo o código fonte trabalhado no repositório Github, desde a criação de sprints até as próprias representações do projeto, usando como base toda as prioridades dos requisitos citados na Especificação do Projeto. Ambientes de trabalho em geral serão descritos abaixo:
 
 ## Controle de Versão
 
@@ -35,26 +33,19 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 > - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
 > - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
 
+## Gestão do Código Fonte:
+A gestão se da por manutenções e opiniões serão realizadas pela equipe ou desenvolvedor separadas em branches pelo próprio GitHub onde passa por partes de análise e discussão para o merge e commit serem realizados.
+
 ## Gerenciamento de Projeto
-
-### Divisão de Papéis
-
-Apresente a divisão de papéis entre os membros do grupo.
-
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-
-### Processo
-
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+Utilizando metodologias ágeis conforme o scrum, a equipe de projeto ficou dividida em:
+#### Scrum Master: 
+- Anderson do Carmo
+#### Product Owner: 
+- Vinicius Ottoni
+#### Equipe de desenvolvimento:
+- Leandro Furtado
+#### Equipe de Design:
+- Victor Marcos
 
 ### Ferramentas
 
