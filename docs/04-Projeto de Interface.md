@@ -11,17 +11,17 @@ O diagrama de fluxo apresentado na Figura abaixo mostra o fluxo de interação d
 
 ## Wireframes
 
-### **Tela - Home**
+### **Tela - Home-Page**
 
-A tela home é onde vai se concentrar a maior parte das funcionalidades da aplicação web. Pensando em um novo cliente, no topo da página teremos um cabeçalho com o logo da empresa, direcionamento para outras telas e uma barra de navegação que direciona as demais páginas do site.
+A tela Home-Page irá concentrar a maior parte das funcionalidades da aplicação web. Pensando em um novo cliente, no topo da tela teremos um cabeçalho com o logo da empresa, uma barra de Menu que direciona as demais telas do site e o conteúdo central a ser apresentado de acordo com o Menu acessado. 
 
 ![image](img/home.png)
 
-> **Body da Home Page - Breve apresentação da empresa**
+> **Body da Home-Page - Breve apresentação da empresa**
 
-- Nessa primeira parte faremos uma breve apresentação da empresa com imagens e pouco texto, focando em que tipos de soluções a empresa de proteção fornece, as   facilidades de acesso e adesão, do suporte, da qualidade e do foco no cliente. Em outras palavras, seria um cartão de visitas e convite à adesão da pessoa que está olhando.
+- Nessa primeira parte faremos uma breve apresentação da empresa com imagens e pouco texto, focando em que tipos de soluções a empresa de proteção fornece, as   facilidades de acesso e adesão, do suporte, da qualidade e do foco no cliente. Em outras palavras, seria um cartão de visitas e convite à adesão da pessoa que está visualizando.
 
-**Página - Planos de proteção**
+**Tela - Planos de proteção**
 
 É possível ver os planos que podem ser adquiridos pelo usuário.
 
@@ -34,7 +34,7 @@ A tela home é onde vai se concentrar a maior parte das funcionalidades da aplic
 - Vidros trincados
 - Quebra em geral
 
-**Página - Cotação**
+**Tela - Cotação**
 
 Ao clicar no botão abrirá um formulário para preenchimento com opções de marcar, para digitar os dados do cliente e de seu aparelho.
 
@@ -45,37 +45,37 @@ Ao clicar no botão abrirá um formulário para preenchimento com opções de ma
 - Botão para contratação: Após a cotação o cliente já pode contratar o serviço. (Caso o cliente não esteja logado um pop-up é aberto com a opção de login/cadastro)
 
 
-**Página - Login/Cadastro**
+**Tela - Login/Cadastro**
 
-Pode ser acessada pela barra no cabeçalho da página ou vir através da página de cotação.
+Pode ser acessada pela barra no cabeçalho da tela ou vir através da tela de cotação.
 
 ![image](img/logincadastro.png)
 
-- Nesta página você tem os campos para logar com email e senha e os campos para realizar um registro no site.
-- Após clicar em logar, você será redirecionado para página do cliente.
+- Nesta tela você tem os campos para logar com email e senha e os campos para realizar um cadastro no site.
+- Após clicar em logar, você será redirecionado para área do cliente.
 
-**Página - Sobre a empresa**
+**Tela - Sobre a empresa**
 
-Nessa página terá uma apresentação completa da empresa, contemplando visão, missão e valores da mesma.
+Nesta tela terá uma apresentação completa da empresa, contemplando visão, missão e valores da mesma.
 
 ![image](img/sobre.png)
 
-- Contem alguns botões, mas o principal é o que redireciona para página de avaliações da empresa.
+- Contém alguns botões, mas o principal é o que redireciona para página de avaliações da empresa.
 
-**Página - Avaliações da empresa**
+**Tela - Avaliações da empresa**
 
-Essa página não terá nenhum componente que o cliente possa interagir (somente um botão redirecionando para página para que o mesmo possa fazer uma avaliação dos serviços por ele contratado), ela vai ter recortes das avaliações feitas por clientes que já aderiram e utilizaram do serviços fornecidos pela empresa. Essencialmente terá uma foto, um comentário e a nota dada.
+Esta tela não terá nenhum componente que o cliente possa interagir (somente um botão redirecionando para a tela para que o mesmo possa fazer uma avaliação dos serviços por ele contratado), ela vai ter recortes das avaliações feitas por clientes que já aderiram e utilizaram do serviços fornecidos pela empresa. Essencialmente terá uma foto, um comentário e a nota dada.
 
 ![image](img/avaliacoes.png)
 
-**Página - Cliente**
+**Tela - Área do Cliente**
 
-A página do cliente contem algumas opções importantes, como a emissão de boletos, atualização de dados, informações sobre o plano contratado e situação de sinistros. Contem um botão com o redirecionamento para pagina de realização de avaliações sobre o plano contratado.
+A tela Área do cliente contém algumas opções importantes, como a emissão de boletos, atualização de dados, informações sobre o plano contratado e situação de sinistros. Contém um botão com o redirecionamento para tela de realização de avaliações sobre o plano contratado.
 
 ![image](img/userlogged.png)
 
 - Botão de imprimir segunda via de boletos.
-- Botão de atualiação de dados contendo um formulário para a inserção dos novos dados.
+- Botão de atualização de dados contendo um formulário para a inserção dos novos dados.
 - Tela lateral com as informações do plano contratado.
 - Botão de redirecionamento para a realização de avaliações.
 - Situação do sinistros (SE HOUVER)
