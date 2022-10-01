@@ -23,6 +23,7 @@ Utilizando metodologias ágeis conforme o scrum, a equipe de projeto ficou divid
 - Leonardo Moreira Franco De Souza
 #### Equipe de Design:
 - Lia Araruna De Lima
+- Leandro Furtado de Sousa
 
 Sendo então divido as tarefas e organizadas pelo próprio time, onde encontramos:
 - Product Backlog: Local onde todas as funcionalidades da aplicação se encontra e que serão realizadas ao decorrer do projeto.
