@@ -64,7 +64,7 @@ Nessa página terá uma apresentação completa da empresa, contemplando visão,
 
 **Página - Avaliações da empresa**
 
-Essa página não terá nenhum componente que o cliente possa interagir (somente um botão redirecionando para pagina para que o mesmo possa fazer uma avaliação dos serviçõs por ele contratado), ela vai ter recortes das avaliações feitas por clientes que já aderiram e utilizaram do serviços fornecidos pela empresa. Essencialmente terá uma foto, um comentário e a nota dada.
+Essa página não terá nenhum componente que o cliente possa interagir (somente um botão redirecionando para página para que o mesmo possa fazer uma avaliação dos serviços por ele contratado), ela vai ter recortes das avaliações feitas por clientes que já aderiram e utilizaram do serviços fornecidos pela empresa. Essencialmente terá uma foto, um comentário e a nota dada.
 
 ![image](img/avaliacoes.png)
 
