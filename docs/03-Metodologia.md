@@ -39,5 +39,5 @@ As ferramentas empregadas no projeto são:
 
 - Editor de código (VS Code).
 - Microsoft Teams e Discord para reuniões diárias, por serem mais didáticos, organizados e simples ao mesmo tempo e no caso do Teams gravar as reuniões.
-- Ferramentas de desenho de tela (Lucidchart, Moqups e brModelo).
+- Ferramentas de desenho de tela, diagrama e modelagens(Lucidchart, Moqups e brModelo).
 - Ferramentas do Github
