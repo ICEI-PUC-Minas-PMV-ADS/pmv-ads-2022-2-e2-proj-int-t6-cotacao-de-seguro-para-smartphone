@@ -2,7 +2,7 @@
 
 O padrão de layout a ser utilizado pelo site tem correspondência ao projeto de Interface elaborado anteriormente, conforme Figura.
 
-O template criado está disponível no site [http://github.com/….](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e2-proj-int-t6-cotacao-de-seguro-para-smartphone). e é composto pelos seguintes layouts: 
+O template criado está disponível neste site e é composto pelos seguintes layouts: 
 - Home-Page
 - Proteção Celulares
 
