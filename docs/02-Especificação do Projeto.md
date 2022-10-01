@@ -48,6 +48,7 @@ Abaixo as tabelas detalham todos os requisitos funcionais e não funcionais do p
 |RF-011| A aplicação deve mostrar os dados de contato da empresa para solicitação de assistência técnica imediata e transferir o usuário para o atendimento 24 horas (WhatsApp). | ALTA | 
 |RF-012| A aplicação deve permitir ao usuário comunicar o sinistro, seja para reparo ou reembolso. | ALTA | 
 |RF-013| A aplicação deve permitir ao usuário acompanhar o processo de restituição do sinistro. | ALTA | 
+|RF-014| A aplicação deve permitir ao usuário realizar a recuperação da senha de acesso.  | ALTA | 
 
 ### Requisitos não Funcionais
 
