@@ -32,7 +32,6 @@ Sendo então divido as tarefas e organizadas pelo próprio time, onde encontramo
 - Done: Tudo que já foi feito desde o inicio.
 Sendo também possível a inserção de novas colunas ao decorrer do projeto.
 
-### Ferramentas
 
 ### Ferramentas
 As ferramentas empregadas no projeto são:
