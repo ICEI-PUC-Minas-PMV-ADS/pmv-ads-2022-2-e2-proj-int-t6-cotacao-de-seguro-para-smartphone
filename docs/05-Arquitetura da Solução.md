@@ -19,10 +19,9 @@ Segue o modelo do nosso projeto:
 ![foto](img/modelo_er.jpeg)
 
 ## Projeto da Base de Dados
+# Modelo Logico:
 
-O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
- 
-Para mais informações, consulte o microfundamento "Modelagem de Dados".
+![foto](img/modeloLogico.jpeg)
 
 ## Tecnologias Utilizadas
 
