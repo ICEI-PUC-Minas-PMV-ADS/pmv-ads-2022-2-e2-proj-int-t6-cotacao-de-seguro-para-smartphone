@@ -19,7 +19,7 @@ Segue o modelo do nosso projeto:
 ![foto](img/modelo_er.jpeg)
 
 ## Projeto da Base de Dados
-# Modelo Logico:
+### Modelo Logico:
 
 ![foto](img/modeloLogico.jpeg)
 
