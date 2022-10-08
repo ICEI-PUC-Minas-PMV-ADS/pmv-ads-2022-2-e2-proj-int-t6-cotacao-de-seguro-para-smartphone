@@ -12,9 +12,9 @@ export class LoginComponent implements OnInit {
 
   loginForm: any;
 
-  emailDB: string = "email@teste.com";
+  emailDB: string = "teste@email.com";
 
-  senhaDB: string = "12345678";
+  senhaDB: string = "123";
 
   mensagem: string = '';
 
@@ -40,9 +40,10 @@ export class LoginComponent implements OnInit {
 
   Login() {
     if (this.loginForm.get('email').value == this.emailDB && this.loginForm.get('senha').value == this.senhaDB) {
-      this.router.navigate(["/home"]);
+      alert('Login Realizado com Sucesso')
+      this.router.navigate(["/cliente"]);
     } else {
-      this.mensagem = "E-mail ou a senha estar errado!";
+      alert('Confira se seu e-mail ou senha está correto');
     }
   }
 }

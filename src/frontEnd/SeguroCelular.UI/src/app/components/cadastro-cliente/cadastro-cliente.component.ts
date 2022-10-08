@@ -40,7 +40,7 @@ export class CadastroClienteComponent implements OnInit {
 
   NovoCadastro() {
     console.log('Novo cadastro')
-    this.router.navigate(["/home"]);
+    this.router.navigate(["/cliente"]);
   }
 
   SalvarCadastro() { }

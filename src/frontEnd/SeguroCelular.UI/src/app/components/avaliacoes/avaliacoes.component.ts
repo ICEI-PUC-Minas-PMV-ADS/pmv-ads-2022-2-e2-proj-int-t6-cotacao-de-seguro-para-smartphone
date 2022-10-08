@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AvaliacoesComponent implements OnInit {
 
-  cadastroForm!: FormGroup;
+  cadastroForm: FormGroup;
 
   constructor() { }
 

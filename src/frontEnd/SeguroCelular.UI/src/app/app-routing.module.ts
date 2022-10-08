@@ -7,6 +7,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './components/home/home.component';
+import { ClienteComponent } from './components/cliente/cliente.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'sobre', component: SobreComponent },
   { path: 'avaliacoes', component: AvaliacoesComponent },
   { path: 'cadastro-cliente', component: CadastroClienteComponent },
+  { path: 'cliente', component: ClienteComponent },
 ];
 
 @NgModule({
