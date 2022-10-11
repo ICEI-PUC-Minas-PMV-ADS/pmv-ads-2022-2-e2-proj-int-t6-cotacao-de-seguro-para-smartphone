@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SeguroCelular.Domain.Entities;
 
 namespace SeguroCelular.Domain.Repositories
 {
     public interface IClienteRepository
     {
+        Task<Cliente> ObterPorId(Guid id);
 
+        void Adicionar(Cliente cliente);
+        void Atualizar(Cliente cliente);
     }
 }

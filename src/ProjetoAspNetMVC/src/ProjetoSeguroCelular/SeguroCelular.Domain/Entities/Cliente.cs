@@ -8,16 +8,14 @@ namespace SeguroCelular.Domain.Entities
         public string Sobrenome { get; private set; }
         public string Cpf { get; private set; }
         public DateTime DataNascimento { get; private set; }
-        public string Email { get; private set; }
         public Endereco Endereco { get; private set; }
 
-        public Cliente(string nome, string sobrenome, string cpf, DateTime dataNascimento, string email, Endereco endereco)
+        public Cliente(string nome, string sobrenome, string cpf, DateTime dataNascimento, Endereco endereco)
         {
             Nome = nome;
             Sobrenome = sobrenome;
             Cpf = cpf;
             DataNascimento = dataNascimento;
-            Email = email;
             Endereco = endereco;
         }
     }
