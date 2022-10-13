@@ -1,4 +1,6 @@
+import { FormGroup, FormBuilder } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
+import { Cotacao } from 'src/app/models/Cotacao';
 
 @Component({
   selector: 'app-cotacao',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CotacaoComponent implements OnInit {
 
-  constructor() { }
+  cadastroForm: FormGroup;
+  cotacao: Cotacao;
+
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
+    this.cadastroForm = this.fb.group({
+      nome: [''],
+      email: [''],
+      marca: [''],
+      valor: [''],
+      opcionais: ['']
+    })
   }
-
 }
