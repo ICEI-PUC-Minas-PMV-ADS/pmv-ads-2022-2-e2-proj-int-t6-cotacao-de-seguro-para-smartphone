@@ -2,24 +2,24 @@
   <app-nav></app-nav>
 
   <div class="container2">
-    <form>
+    <form [formGroup]="cotacaoForm" autocomplete="off">
       <div class="perguntas">
         <h2 class="title">Faça sua pré-cotação</h2>
         <br />
         <div class="info">
           <label for="nome-cliente">Nome:</label>
-          <input type="text" name="nome-cliente" id="nome-cliente">
+          <input type="text" class="form-control" formControlName="nome">
         </div>
         <div class="info">
           <label for="email-cliente">Email:</label>
-          <input type="text" name="email-cliente" id="email-cliente">
+          <input type="text" class="form-control" formControlName="email">
         </div>
         <div class="info">
           <label for="modelo-celular">Digite a marca e o modelo do seu celular:</label>
-          <input type="text" name="modelo-celular" id="modelo-celular" />
+          <input type="text" class="form-control" formControlName="marca" />
           <br />
           Escolha a opção do valor do seu celular:
-          <select class="valor" id="valor">
+          <select class="valor form-control" formControlName="valor">
             <option value="0">R$00,00 - R$1000,00</option>
             <option value="1">R$1000,00 - R$2000,00</option>
             <option value="2">R$2000,00 - R$3000,00</option>
@@ -34,15 +34,15 @@
       </div>
       <br />
       <h4>Agora marque os opcionais desejados:</h4>
-      <div class="opcional">
+      <!-- <div class="opcional">
         <input type="checkbox" class="checkbox" name="Celular reserva" id="1" />Celular Reserva
         <input type="checkbox" class="checkbox" name="Manutencao preventiva" id="2" />Manutenção Preventiva
         <br />
         <input class="checkbox" type="checkbox" name="Cobertura para acidentes" id="3" />Cobertura para acidentes
         <br />
-      </div>
+      </div> -->
       <div>
-        <input class="btn btn-dark" type="submit" id="send" value="Fazer cotação" />
+        <input class="btn btn-dark" type="submit" (click)="NovoCadastro()" value="Fazer cotação" />
       </div>
       <div class="valorCotacao">
       </div>

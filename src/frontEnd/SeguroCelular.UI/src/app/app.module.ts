@@ -36,15 +36,14 @@ import { ClienteComponent } from './components/cliente/cliente.component';
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     ToastrModule.forRoot()
   ],
   exports: [
     NavComponent,
     FooterComponent
   ],
-  providers: [
-    HttpClientModule
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
