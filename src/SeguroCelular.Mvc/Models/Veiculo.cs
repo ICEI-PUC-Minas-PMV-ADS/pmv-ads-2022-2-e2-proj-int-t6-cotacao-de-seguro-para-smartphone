@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SeguroCelular.Mvc.Models
@@ -9,10 +10,12 @@ namespace SeguroCelular.Mvc.Models
         [Key]
         public int Id { get; set; }
 
-        [Required(ErrorMessage ="Obrigatório Informar o nome!")]
+        [Required(ErrorMessage = "Obrigatório Informar o nome!")]
         public string Nome { get; set; }
 
         [Required(ErrorMessage = "Obrigatório Informar a placa!")]
         public string Placa { get; set; }
+
+        public ICollection<Consumo> Consumos { get; set; }
     }
 }
