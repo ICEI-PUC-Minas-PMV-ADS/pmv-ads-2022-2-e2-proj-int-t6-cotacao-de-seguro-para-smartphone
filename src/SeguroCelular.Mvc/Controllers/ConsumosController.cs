@@ -9,22 +9,23 @@ using SeguroCelular.Mvc.Models;
 
 namespace SeguroCelular.Mvc.Controllers
 {
-    public class VeiculosController : Controller
+    public class ConsumosController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public VeiculosController(ApplicationDbContext context)
+        public ConsumosController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Veiculos
+        // GET: Consumos
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Veiculos.ToListAsync());
+            var applicationDbContext = _context.Consumos.Include(c => c.Veiculo);
+            return View(await applicationDbContext.ToListAsync());
         }
 
-        // GET: Veiculos/Details/5
+        // GET: Consumos/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -32,59 +33,42 @@ namespace SeguroCelular.Mvc.Controllers
                 return NotFound();
             }
 
-            var veiculo = await _context.Veiculos
+            var consumo = await _context.Consumos
+                .Include(c => c.Veiculo)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (veiculo == null)
+            if (consumo == null)
             {
                 return NotFound();
             }
 
-            return View(veiculo);
+            return View(consumo);
         }
 
-        // GET: Veiculos/Relatorio/5
-        public async Task<IActionResult> Relatorio(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var veiculo = await _context.Veiculos
-                .Include(t => t.Consumos)
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (veiculo == null)
-            {
-                return NotFound();
-            }
-
-            return View(veiculo);
-        }
-
-
-        // GET: Veiculos/Create
+        // GET: Consumos/Create
         public IActionResult Create()
         {
+            ViewData["VeiculoId"] = new SelectList(_context.Veiculos, "Id", "Nome");
             return View();
         }
 
-        // POST: Veiculos/Create
+        // POST: Consumos/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Placa")] Veiculo veiculo)
+        public async Task<IActionResult> Create([Bind("Id,Descricao,Data,Km,Valor,Tipo,VeiculoId")] Consumo consumo)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(veiculo);
+                _context.Add(consumo);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(veiculo);
+            ViewData["VeiculoId"] = new SelectList(_context.Veiculos, "Id", "Nome", consumo.VeiculoId);
+            return View(consumo);
         }
 
-        // GET: Veiculos/Edit/5
+        // GET: Consumos/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -92,22 +76,23 @@ namespace SeguroCelular.Mvc.Controllers
                 return NotFound();
             }
 
-            var veiculo = await _context.Veiculos.FindAsync(id);
-            if (veiculo == null)
+            var consumo = await _context.Consumos.FindAsync(id);
+            if (consumo == null)
             {
                 return NotFound();
             }
-            return View(veiculo);
+            ViewData["VeiculoId"] = new SelectList(_context.Veiculos, "Id", "Nome", consumo.VeiculoId);
+            return View(consumo);
         }
 
-        // POST: Veiculos/Edit/5
+        // POST: Consumos/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Placa")] Veiculo veiculo)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Descricao,Data,Km,Valor,Tipo,VeiculoId")] Consumo consumo)
         {
-            if (id != veiculo.Id)
+            if (id != consumo.Id)
             {
                 return NotFound();
             }
@@ -116,12 +101,12 @@ namespace SeguroCelular.Mvc.Controllers
             {
                 try
                 {
-                    _context.Update(veiculo);
+                    _context.Update(consumo);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!VeiculoExists(veiculo.Id))
+                    if (!ConsumoExists(consumo.Id))
                     {
                         return NotFound();
                     }
@@ -132,10 +117,11 @@ namespace SeguroCelular.Mvc.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(veiculo);
+            ViewData["VeiculoId"] = new SelectList(_context.Veiculos, "Id", "Nome", consumo.VeiculoId);
+            return View(consumo);
         }
 
-        // GET: Veiculos/Delete/5
+        // GET: Consumos/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -143,30 +129,31 @@ namespace SeguroCelular.Mvc.Controllers
                 return NotFound();
             }
 
-            var veiculo = await _context.Veiculos
+            var consumo = await _context.Consumos
+                .Include(c => c.Veiculo)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (veiculo == null)
+            if (consumo == null)
             {
                 return NotFound();
             }
 
-            return View(veiculo);
+            return View(consumo);
         }
 
-        // POST: Veiculos/Delete/5
+        // POST: Consumos/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var veiculo = await _context.Veiculos.FindAsync(id);
-            _context.Veiculos.Remove(veiculo);
+            var consumo = await _context.Consumos.FindAsync(id);
+            _context.Consumos.Remove(consumo);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool VeiculoExists(int id)
+        private bool ConsumoExists(int id)
         {
-            return _context.Veiculos.Any(e => e.Id == id);
+            return _context.Consumos.Any(e => e.Id == id);
         }
     }
 }
