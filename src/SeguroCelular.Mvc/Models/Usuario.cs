@@ -11,6 +11,7 @@ namespace SeguroCelular.Mvc.Models
         [Required(ErrorMessage ="Obrigatório Informar o nome!")]
         public string Nome { get; set; }
         [Required(ErrorMessage = "Obrigatório Informar a senha!")]
+        [DataType(DataType.Password)]
         public string Senha { get; set; }
         [Required(ErrorMessage = "Obrigatório Informar o perfil!")]
         public Perfil Perfil { get; set; }
