@@ -13,7 +13,7 @@ using SeguroCelular.Mvc.Models;
 
 namespace SeguroCelular.Mvc.Controllers
 {
-    [Authorize(Roles ="Admin")]
+    //[Authorize(Roles ="Admin")]
     public class UsuariosController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -23,14 +23,14 @@ namespace SeguroCelular.Mvc.Controllers
             _context = context;
         }
 
-        [AllowAnonymous]
+        //[AllowAnonymous]
         public IActionResult Login()
         {
             return View();
         }
 
         [HttpPost]
-        [AllowAnonymous]
+        //[AllowAnonymous]
         public async Task<IActionResult> Login([Bind("Id, Senha")]Usuario usuario)
         {
             var user = await _context.Usuarios
@@ -73,14 +73,14 @@ namespace SeguroCelular.Mvc.Controllers
             return View();
         }
 
-        [AllowAnonymous]
+        //[AllowAnonymous]
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync();
             return RedirectToAction("Login", "Usuarios");
         }
 
-        [AllowAnonymous]
+        //[AllowAnonymous]
         public IActionResult AccessDenied()
         {
             return View();

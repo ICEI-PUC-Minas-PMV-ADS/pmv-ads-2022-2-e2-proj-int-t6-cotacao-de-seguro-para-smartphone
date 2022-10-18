@@ -10,7 +10,7 @@ using SeguroCelular.Mvc.Models;
 
 namespace SeguroCelular.Mvc.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class ConsumosController : Controller
     {
         private readonly ApplicationDbContext _context;

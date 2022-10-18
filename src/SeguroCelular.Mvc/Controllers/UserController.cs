@@ -2,31 +2,30 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using SeguroCelular.Mvc.Models;
+using SeguroCelular.Mvc.Models.Data;
 
 namespace SeguroCelular.Mvc.Controllers
 {
-    //[Authorize]
-    public class VeiculosController : Controller
+    public class UserController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly AppDbContext _context;
 
-        public VeiculosController(ApplicationDbContext context)
+        public UserController(AppDbContext context)
         {
             _context = context;
         }
 
-        // GET: Veiculos
+        // GET: User
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Veiculos.ToListAsync());
+            return View(await _context.Users.ToListAsync());
         }
 
-        // GET: Veiculos/Details/5
+        // GET: User/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -34,59 +33,39 @@ namespace SeguroCelular.Mvc.Controllers
                 return NotFound();
             }
 
-            var veiculo = await _context.Veiculos
+            var user = await _context.Users
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (veiculo == null)
+            if (user == null)
             {
                 return NotFound();
             }
 
-            return View(veiculo);
+            return View(user);
         }
 
-        // GET: Veiculos/Relatorio/5
-        public async Task<IActionResult> Relatorio(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var veiculo = await _context.Veiculos
-                .Include(t => t.Consumos)
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (veiculo == null)
-            {
-                return NotFound();
-            }
-
-            return View(veiculo);
-        }
-
-
-        // GET: Veiculos/Create
+        // GET: User/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Veiculos/Create
+        // POST: User/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Placa")] Veiculo veiculo)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Email,Senha")] User user)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(veiculo);
+                _context.Add(user);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(veiculo);
+            return View(user);
         }
 
-        // GET: Veiculos/Edit/5
+        // GET: User/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -94,22 +73,22 @@ namespace SeguroCelular.Mvc.Controllers
                 return NotFound();
             }
 
-            var veiculo = await _context.Veiculos.FindAsync(id);
-            if (veiculo == null)
+            var user = await _context.Users.FindAsync(id);
+            if (user == null)
             {
                 return NotFound();
             }
-            return View(veiculo);
+            return View(user);
         }
 
-        // POST: Veiculos/Edit/5
+        // POST: User/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Placa")] Veiculo veiculo)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Email,Senha")] User user)
         {
-            if (id != veiculo.Id)
+            if (id != user.Id)
             {
                 return NotFound();
             }
@@ -118,12 +97,12 @@ namespace SeguroCelular.Mvc.Controllers
             {
                 try
                 {
-                    _context.Update(veiculo);
+                    _context.Update(user);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!VeiculoExists(veiculo.Id))
+                    if (!UserExists(user.Id))
                     {
                         return NotFound();
                     }
@@ -134,10 +113,10 @@ namespace SeguroCelular.Mvc.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(veiculo);
+            return View(user);
         }
 
-        // GET: Veiculos/Delete/5
+        // GET: User/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -145,30 +124,30 @@ namespace SeguroCelular.Mvc.Controllers
                 return NotFound();
             }
 
-            var veiculo = await _context.Veiculos
+            var user = await _context.Users
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (veiculo == null)
+            if (user == null)
             {
                 return NotFound();
             }
 
-            return View(veiculo);
+            return View(user);
         }
 
-        // POST: Veiculos/Delete/5
+        // POST: User/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var veiculo = await _context.Veiculos.FindAsync(id);
-            _context.Veiculos.Remove(veiculo);
+            var user = await _context.Users.FindAsync(id);
+            _context.Users.Remove(user);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool VeiculoExists(int id)
+        private bool UserExists(int id)
         {
-            return _context.Veiculos.Any(e => e.Id == id);
+            return _context.Users.Any(e => e.Id == id);
         }
     }
 }
