@@ -25,6 +25,11 @@ namespace SeguroCelular.Mvc.Controllers
             return View(await _context.Users.ToListAsync());
         }
 
+        public IActionResult LoginUser()
+        {
+            return View();
+        }
+
         // GET: User/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -60,7 +65,7 @@ namespace SeguroCelular.Mvc.Controllers
             {
                 _context.Add(user);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index","Home");
             }
             return View(user);
         }
