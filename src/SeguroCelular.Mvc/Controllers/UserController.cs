@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -27,6 +29,48 @@ namespace SeguroCelular.Mvc.Controllers
 
         public IActionResult LoginUser()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> LoginUser([Bind("Email, Senha")] User user)
+        {
+            var loginUser = await _context.Users
+                .FirstOrDefaultAsync(m => m.Email == user.Email);
+
+            if (loginUser == null)
+            {
+                ViewBag.Message = "Usuário e/ou senha inválidos";
+                return View();
+            }
+
+            bool isSenhaOk = BCrypt.Net.BCrypt.Verify(user.Senha, loginUser.Senha);
+
+            if(isSenhaOk)
+            {
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, loginUser.Nome),
+                    new Claim(ClaimTypes.NameIdentifier, loginUser.Nome)
+                };
+
+                var userIdentity = new ClaimsIdentity(claims, "login");
+
+                ClaimsPrincipal principal = new ClaimsPrincipal(userIdentity);
+
+                var props = new AuthenticationProperties
+                {
+                    AllowRefresh = true,
+                    ExpiresUtc = DateTime.Now.ToLocalTime().AddDays(1),
+                    IsPersistent = true
+                };
+
+                await HttpContext.SignInAsync(principal, props);
+
+                return Redirect("/");
+            }
+
+            ViewBag.Message = "Usuário e/ou Senha inválidos!";
             return View();
         }
 
@@ -63,6 +107,7 @@ namespace SeguroCelular.Mvc.Controllers
         {
             if (ModelState.IsValid)
             {
+                user.Senha = BCrypt.Net.BCrypt.HashPassword(user.Senha);
                 _context.Add(user);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index","Home");
@@ -102,6 +147,7 @@ namespace SeguroCelular.Mvc.Controllers
             {
                 try
                 {
+                    user.Senha = BCrypt.Net.BCrypt.HashPassword(user.Senha);
                     _context.Update(user);
                     await _context.SaveChangesAsync();
                 }
