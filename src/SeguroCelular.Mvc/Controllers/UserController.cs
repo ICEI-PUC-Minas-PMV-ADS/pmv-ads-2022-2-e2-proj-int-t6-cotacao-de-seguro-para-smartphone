@@ -33,25 +33,25 @@ namespace SeguroCelular.Mvc.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> LoginUser([Bind("Email, Senha")] User user)
+        public async Task<IActionResult> LoginUser([Bind("Email, Senha")] User model)
         {
-            var loginUser = await _context.Users
-                .FirstOrDefaultAsync(m => m.Email == user.Email);
+            var usuario = await _context.Users
+                .FirstOrDefaultAsync(m => m.Email == model.Email);
 
-            if (loginUser == null)
+            if (usuario == null)
             {
                 ViewBag.Message = "Usuário e/ou senha inválidos";
                 return View();
             }
 
-            bool isSenhaOk = BCrypt.Net.BCrypt.Verify(user.Senha, loginUser.Senha);
+            bool isSenhaOk = BCrypt.Net.BCrypt.Verify(model.Senha, usuario.Senha);
 
             if(isSenhaOk)
             {
                 var claims = new List<Claim>
                 {
-                    new Claim(ClaimTypes.Name, loginUser.Nome),
-                    new Claim(ClaimTypes.NameIdentifier, loginUser.Nome)
+                    new Claim(ClaimTypes.Name, usuario.Nome),
+                    new Claim(ClaimTypes.NameIdentifier, usuario.Nome)
                 };
 
                 var userIdentity = new ClaimsIdentity(claims, "login");
@@ -109,20 +109,29 @@ namespace SeguroCelular.Mvc.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Email,Senha")] User user)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Email,Senha")] User model)
         {
-            // validar se ja existe o email no sistema
+            var userEmails = _context.Users.Select(x => x.Email).ToList();
+
+            foreach (var email in userEmails)
+            {
+                if (model.Email == email)
+                {
+                    ViewBag.Message = "E-mail já cadastrado no sistema!";
+                    return View();
+                }
+            }
 
             //Editar a view de visualizacao do perfil do usuario
 
             if (ModelState.IsValid)
             {
-                user.Senha = BCrypt.Net.BCrypt.HashPassword(user.Senha);
-                _context.Add(user);
+                model.Senha = BCrypt.Net.BCrypt.HashPassword(model.Senha);
+                _context.Add(model);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index","Home");
             }
-            return View(user);
+            return View(model);
         }
 
         // GET: User/Edit/5
