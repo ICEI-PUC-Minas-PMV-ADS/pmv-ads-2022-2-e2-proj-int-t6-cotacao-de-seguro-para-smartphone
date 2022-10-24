@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 using SeguroCelular.Mvc.Models;
 using SeguroCelular.Mvc.Models.Data;
+using SeguroCelular.Mvc.Config;
 
 namespace SeguroCelular.Mvc.Controllers
 {
@@ -51,7 +53,8 @@ namespace SeguroCelular.Mvc.Controllers
                 var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, usuario.Nome),
-                    new Claim(ClaimTypes.NameIdentifier, usuario.Nome)
+                    new Claim(ClaimTypes.NameIdentifier, usuario.Nome),
+                    new Claim(ClaimTypes.Email, usuario.Email)
                 };
 
                 var userIdentity = new ClaimsIdentity(claims, "login");
@@ -81,15 +84,17 @@ namespace SeguroCelular.Mvc.Controllers
         }
 
         // GET: User/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details()
         {
-            if (id == null)
+            var email = User.GetUserEmail();
+
+            if (email == null)
             {
                 return NotFound();
             }
 
             var user = await _context.Users
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.Email == email);
             if (user == null)
             {
                 return NotFound();
