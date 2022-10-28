@@ -5,8 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using SeguroCelular.Mvc.Config;
 using SeguroCelular.Mvc.Models;
 using SeguroCelular.Mvc.Models.Data;
+using SeguroCelular.Mvc.Models.Enums;
 
 namespace SeguroCelular.Mvc.Controllers
 {
@@ -59,9 +61,14 @@ namespace SeguroCelular.Mvc.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,ModeloCelular,Valor,ValorCotacao,UserId")] CotacaoSeguro cotacaoSeguro)
         {
+            var email = User.GetUserEmail();
+            var usuario = await _context.Users
+                .FirstOrDefaultAsync(m => m.Email == email);
             if (ModelState.IsValid)
             {
-                _context.Add(cotacaoSeguro);
+                cotacaoSeguro.UserId = usuario.Id;              
+                cotacaoSeguro.ValorCotacao = GerarValorCotacao(cotacaoSeguro.Valor);
+                _context.Add(cotacaoSeguro);               
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -155,6 +162,39 @@ namespace SeguroCelular.Mvc.Controllers
         private bool CotacaoSeguroExists(int id)
         {
             return _context.Cotacoes.Any(e => e.Id == id);
+        }
+
+        private static int GerarValorCotacao(EValoresCelular valor)
+        {
+            int cotacao = 0;
+            switch (valor)
+            {
+                case EValoresCelular.Ate500:
+                    cotacao = 10;
+                    break;
+                case EValoresCelular.De501a1000:
+                    cotacao = 20;
+                    break;
+                case EValoresCelular.De1001a2000:
+                    cotacao = 30;
+                    break;
+                case EValoresCelular.De2001a3000:
+                    cotacao = 40;
+                    break;
+                case EValoresCelular.De3001a4000:
+                    cotacao = 50;
+                    break;
+                case EValoresCelular.De4001a5000:
+                    cotacao = 60;
+                    break;
+                case EValoresCelular.Acima5000:
+                    cotacao = 100;
+                    break;
+                default:
+                    cotacao = 0;
+                    break;
+            }
+            return cotacao;
         }
     }
 }

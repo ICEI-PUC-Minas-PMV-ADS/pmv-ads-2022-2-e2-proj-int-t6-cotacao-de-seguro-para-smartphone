@@ -1,5 +1,6 @@
 ﻿using SeguroCelular.Mvc.Models.Enums;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SeguroCelular.Mvc.Models
 {
@@ -21,6 +22,7 @@ namespace SeguroCelular.Mvc.Models
 
         // Ef Relacionamento
         public int UserId { get; set; }
+        [ForeignKey("UserId")]
         public User User { get; set; }
 
     }

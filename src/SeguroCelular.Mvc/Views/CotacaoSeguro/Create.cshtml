@@ -1,12 +1,12 @@
-﻿@model SeguroCelular.Mvc.Models.CotacaoSeguro
+﻿@using SeguroCelular.Mvc.Models.Enums
+@model SeguroCelular.Mvc.Models.CotacaoSeguro
 
 @{
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Faça uma Cotação</h1>
 
-<h4>CotacaoSeguro</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -19,26 +19,14 @@
             </div>
             <div class="form-group">
                 <label asp-for="Valor" class="control-label"></label>
-                <select asp-for="Valor" class="form-control"></select>
+                <select asp-for="Valor" class="form-control" asp-items="Html.GetEnumSelectList<EValoresCelular>()"></select>
                 <span asp-validation-for="Valor" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ValorCotacao" class="control-label"></label>
-                <input asp-for="ValorCotacao" class="form-control" />
-                <span asp-validation-for="ValorCotacao" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UserId" class="control-label"></label>
-                <select asp-for="UserId" class ="form-control" asp-items="ViewBag.UserId"></select>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Enviar" class="btn btn-primary" />
+                <a class="btn btn-info" asp-controller="CotacaoSeguro" asp-action="Index">Voltar</a>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 

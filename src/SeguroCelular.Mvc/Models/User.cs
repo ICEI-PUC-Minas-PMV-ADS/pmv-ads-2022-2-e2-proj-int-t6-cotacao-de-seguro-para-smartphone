@@ -1,4 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Authentication;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SeguroCelular.Mvc.Models
 {
@@ -19,5 +22,9 @@ namespace SeguroCelular.Mvc.Models
         [Required(ErrorMessage = "Obrigatório Informar a senha!")]
         [DataType(DataType.Password)]
         public string Senha { get; set; }
+
+        //EfRelacionamento
+        public ICollection<CotacaoSeguro> Cotacoes { get; set; }
+
     }
 }

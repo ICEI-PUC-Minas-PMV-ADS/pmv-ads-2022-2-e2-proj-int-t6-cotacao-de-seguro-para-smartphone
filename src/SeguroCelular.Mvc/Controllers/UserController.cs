@@ -54,7 +54,7 @@ namespace SeguroCelular.Mvc.Controllers
                 {
                     new Claim(ClaimTypes.Name, usuario.Nome),
                     new Claim(ClaimTypes.NameIdentifier, usuario.Nome),
-                    new Claim(ClaimTypes.Email, usuario.Email)
+                    new Claim(ClaimTypes.Email, usuario.Email),
                 };
 
                 var userIdentity = new ClaimsIdentity(claims, "login");
