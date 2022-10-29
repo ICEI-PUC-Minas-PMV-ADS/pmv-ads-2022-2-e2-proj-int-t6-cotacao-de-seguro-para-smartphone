@@ -8,6 +8,10 @@ Os ambientes de trabalho utilizados e onde serão produzidos os artefatos do pro
 
 ![Workspace](img/planejamento.png)
 
+## Trello
+![Workspace](img/quadrokanban.jpeg)
+
+
 - KANBAN TRELLO DO PROJETO: [TRELLO LINK](https://trello.com/b/NRZ407P2/segurosmartphonepucminas)
 
 
