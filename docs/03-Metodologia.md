@@ -8,7 +8,7 @@ Os ambientes de trabalho utilizados e onde serão produzidos os artefatos do pro
 
 ![Workspace](img/planejamento.png)
 
-- KANBAN TRELLO DO PROJETO: [TRELLO LINK](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t2-vechile-protection/projects/2)
+- KANBAN TRELLO DO PROJETO: [TRELLO LINK](https://trello.com/b/NRZ407P2/segurosmartphonepucminas)
 
 
 ## Gestão do Código Fonte:
