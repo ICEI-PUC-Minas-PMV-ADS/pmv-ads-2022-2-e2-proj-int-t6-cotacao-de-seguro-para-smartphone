@@ -8,6 +8,8 @@ Os ambientes de trabalho utilizados e onde serão produzidos os artefatos do pro
 
 ![Workspace](img/planejamento.png)
 
+- KANBAN TRELLO DO PROJETO: [TRELLO LINK](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t2-vechile-protection/projects/2)
+
 
 ## Gestão do Código Fonte:
 A gestão se da por manutenções e opiniões serão realizadas pela equipe ou desenvolvedor separadas em branches pelo próprio GitHub onde passa por partes de análise e discussão para o merge e commit serem realizados.
