@@ -1,16 +1,14 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using SeguroCelular.Mvc.Config;
+using SeguroCelular.Mvc.Models;
+using SeguroCelular.Mvc.Models.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-using Microsoft.EntityFrameworkCore;
-using SeguroCelular.Mvc.Models;
-using SeguroCelular.Mvc.Models.Data;
-using SeguroCelular.Mvc.Config;
 
 namespace SeguroCelular.Mvc.Controllers
 {
@@ -48,7 +46,7 @@ namespace SeguroCelular.Mvc.Controllers
 
             bool isSenhaOk = BCrypt.Net.BCrypt.Verify(model.Senha, usuario.Senha);
 
-            if(isSenhaOk)
+            if (isSenhaOk)
             {
                 var claims = new List<Claim>
                 {
@@ -116,15 +114,21 @@ namespace SeguroCelular.Mvc.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nome,Email,Senha")] User model)
         {
-            var userEmails = _context.Users.Select(x => x.Email).ToList();
+            //var userEmails = _context.Users.Select(x => x.Email).ToList();
 
-            foreach (var email in userEmails)
+            //foreach (var email in userEmails)
+            //{
+            //    if (model.Email == email)
+            //    {
+            //        ViewBag.Message = "E-mail já cadastrado no sistema!";
+            //        return View();
+            //    }
+            //}
+
+            if (EmailExiste(model.Email))
             {
-                if (model.Email == email)
-                {
-                    ViewBag.Message = "E-mail já cadastrado no sistema!";
-                    return View();
-                }
+                ViewBag.Message = "E-mail já cadastrado no sistema!";
+                return View();
             }
 
             //Editar a view de visualizacao do perfil do usuario
@@ -134,7 +138,7 @@ namespace SeguroCelular.Mvc.Controllers
                 model.Senha = BCrypt.Net.BCrypt.HashPassword(model.Senha);
                 _context.Add(model);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Index","Home");
+                return RedirectToAction("Index", "Home");
             }
             return View(model);
         }
@@ -152,6 +156,7 @@ namespace SeguroCelular.Mvc.Controllers
             {
                 return NotFound();
             }
+
             return View(user);
         }
 
@@ -223,6 +228,11 @@ namespace SeguroCelular.Mvc.Controllers
         private bool UserExists(int id)
         {
             return _context.Users.Any(e => e.Id == id);
+        }
+
+        private bool EmailExiste(string email)
+        {
+            return _context.Users.Any(e => e.Email.Equals(email));
         }
     }
 }
