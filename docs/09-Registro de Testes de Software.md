@@ -23,6 +23,10 @@ A seguir, foi criado um vídeo da aplicação mostrando a funcionalidade da tela
 
 ![login](https://user-images.githubusercontent.com/90807404/200700487-8c7ae67b-50e0-4c0c-854e-ab5d6568c1b4.gif)
 
+Através do Visual Studio é possível visualizar a tabela de usuários criada. 
+
+![table users](https://user-images.githubusercontent.com/90807404/200700882-ebe546e8-ceab-40d8-8d7c-f252e53e9f12.jpg)
+
 
 ## Avaliação
 
