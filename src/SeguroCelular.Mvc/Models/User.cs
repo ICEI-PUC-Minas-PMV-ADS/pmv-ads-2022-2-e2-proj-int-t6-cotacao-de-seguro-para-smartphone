@@ -25,6 +25,7 @@ namespace SeguroCelular.Mvc.Models
 
         //EfRelacionamento
         public ICollection<CotacaoSeguro> Cotacoes { get; set; }
+        public ICollection<Avaliacao> Avaliacoes { get; set; }
 
     }
 }

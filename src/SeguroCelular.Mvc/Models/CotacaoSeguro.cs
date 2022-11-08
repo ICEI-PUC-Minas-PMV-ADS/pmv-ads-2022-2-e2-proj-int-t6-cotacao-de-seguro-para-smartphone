@@ -1,4 +1,6 @@
 ﻿using SeguroCelular.Mvc.Models.Enums;
+using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -25,5 +27,6 @@ namespace SeguroCelular.Mvc.Models
         [ForeignKey("UserId")]
         public User User { get; set; }
 
+        public ICollection<Avaliacao> Avaliacoes { get; set; }
     }
 }
