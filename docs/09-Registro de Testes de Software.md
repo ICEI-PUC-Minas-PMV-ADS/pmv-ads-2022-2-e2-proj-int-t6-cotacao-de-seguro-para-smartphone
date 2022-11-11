@@ -16,9 +16,13 @@ O caso de teste obteve êxito, foi possível realizar o cadastro do usuário atr
 ![login](https://user-images.githubusercontent.com/90807404/198836881-551789ff-091b-45af-a387-cf7554129b4c.png)
 
 
+A seguir, foi criado um vídeo da aplicação mostrando a funcionalidade da tela de Login, correspondente ao registro do Caso de Teste 1. 
 
-Obs.: recuperação de senha ainda será desenolvido nas próximas etapas. 
+![login](https://user-images.githubusercontent.com/90807404/200700487-8c7ae67b-50e0-4c0c-854e-ab5d6568c1b4.gif)
 
+Através do Visual Studio é possível visualizar a tabela de usuários criada. 
+
+![table users](https://user-images.githubusercontent.com/90807404/200700882-ebe546e8-ceab-40d8-8d7c-f252e53e9f12.jpg)
 
 
 ## Avaliação
