@@ -64,6 +64,7 @@ namespace SeguroCelular.Mvc.Controllers
             var email = User.GetUserEmail();
             var usuario = await _context.Users
                 .FirstOrDefaultAsync(m => m.Email == email);
+
             if (ModelState.IsValid)
             {
                 cotacaoSeguro.UserId = usuario.Id;              

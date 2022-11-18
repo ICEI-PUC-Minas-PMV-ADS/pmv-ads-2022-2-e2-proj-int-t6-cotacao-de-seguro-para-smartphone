@@ -18,14 +18,10 @@ namespace SeguroCelular.Mvc.Models
         public ENotaAvaliacao Nota { get; set; }
 
         public int UserId { get; set; }
-        public int CotacaoSeguroId { get; set; }
 
         //Relacionamentos EF
 
         [ForeignKey("UserId")]
         public User User { get; set; }
-
-        [ForeignKey("CotacaoSeguroId")]
-        public CotacaoSeguro CotacaoSeguro { get; set; }
     }
 }

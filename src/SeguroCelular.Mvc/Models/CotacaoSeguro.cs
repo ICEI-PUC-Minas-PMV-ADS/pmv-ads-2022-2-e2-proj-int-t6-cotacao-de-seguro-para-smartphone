@@ -26,7 +26,5 @@ namespace SeguroCelular.Mvc.Models
         public int UserId { get; set; }
         [ForeignKey("UserId")]
         public User User { get; set; }
-
-        public ICollection<Avaliacao> Avaliacoes { get; set; }
     }
 }
