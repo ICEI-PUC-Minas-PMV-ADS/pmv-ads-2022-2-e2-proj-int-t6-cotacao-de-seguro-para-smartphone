@@ -106,8 +106,12 @@ namespace SeguroCelular.Mvc.Controllers
 
             if (ModelState.IsValid)
             {
+                var email = User.GetUserEmail();
+                var usuario = await _context.Users
+                    .FirstOrDefaultAsync(m => m.Email == email);
                 try
                 {
+                    avaliacao.UserId = usuario.Id;
                     _context.Update(avaliacao);
                     await _context.SaveChangesAsync();
                 }
