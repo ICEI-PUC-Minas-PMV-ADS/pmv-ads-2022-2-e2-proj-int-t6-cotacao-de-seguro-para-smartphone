@@ -10,7 +10,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | **Caso de Teste** 	| **CT-01 - Realizar login** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-02 - A aplicação deve permitir que o usuário realize o seu cadastro a partir dos seus dados pessoais e os dados do seu smartphone (ano de fabricação, modelo, marca e tempo de uso).<br>RF-03 - A aplicação deve permitir que o usuário acesse sua área do cliente a partir do uso de login e senha.<br>RF-08- A aplicação deve permitir ao usuário cadastrado que edite suas informações de cadastro pessoal.<br>RF-14- A aplicação deve permitir ao usuário realizar a recuperação da senha de acesso.|
-| Objetivo do Teste 	| Permitir que o usuário acesse a área do cliente com as informações de cadastros. |
+| Objetivo do Teste 	| Permitir que o usuário crie seu cadastros para acesso a área do cliente. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site<br> - Realizar cadastro do usuário e cadastro do smartphone <br> - Realizar o login com os dados cadastrados.<br> - Editar os dados de cadastro.<br>|
 |Critério de Êxito | - Usuário conseguir realizar o cadastro no site, efetuar o login, editar o respectivo cadastro e recuperar senha de acesso. |
 |  	|  	|
