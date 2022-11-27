@@ -37,7 +37,7 @@ O caso de teste obteve êxito em partes, após realizar o cadastro no site foi p
 
 ![cotacoes](https://user-images.githubusercontent.com/90807404/204136682-e87230fd-053c-4e82-a6f9-084889837655.png)
 
-A seguir, foi criado um vídeo da aplicação mostrando a funcionalidade da realização da cotação, correspondente ao registro do Caso de Teste 1. 
+A seguir, foi criado um vídeo da aplicação mostrando a funcionalidade da realização da cotação, correspondente ao registro do Caso de Teste 2. 
 
 ![cotação](https://user-images.githubusercontent.com/90807404/204136722-cb22f2e7-d347-4a3f-95d5-1b19e32a2bbc.gif)
 
