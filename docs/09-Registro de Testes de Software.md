@@ -2,7 +2,7 @@
 
 Abaixo segue os resultados obtidos na execução de testes de software, conforme os casos de teste descritos anteriormente. 
 
-**Caso de Teste 01 - Efetuar login**
+**Caso de Teste 01 - Realizar login**
 
 O caso de teste obteve êxito, foi possível realizar o cadastro do usuário através do nome, e-mail e senha e posteriormente realizar o login no site.
 
