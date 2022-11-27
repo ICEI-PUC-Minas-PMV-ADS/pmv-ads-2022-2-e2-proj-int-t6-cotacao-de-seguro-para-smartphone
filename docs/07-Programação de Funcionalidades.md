@@ -1,27 +1,40 @@
 # Programação de Funcionalidades
 
-**Tela Login**
+**Realizar Login**
 
 
 |ID    | Descrição do Requisito  | Artefato(s) produzido(s) |
 |------|-----------------------------------------|----|
 |RF-002| A aplicação deve permitir que o usuário realize o seu cadastro a partir dos seus dados pessoais e os dados do seu smartphone (ano de fabricação, modelo, marca e tempo de uso). | create.cshtml|
-|RF-003| A aplicação deve permitir que o usuário acesse sua área do cliente a partir do uso de login e senha.  | usuarioscontroller.cs / login.cshtml |
+|RF-003| A aplicação deve permitir que o usuário acesse sua área do cliente a partir do uso de login e senha.  | usuario.cs / login.cshtml |
 |RF-003| A aplicação deve permitir ao usuário cadastrado que edite suas informações de cadastro pessoal.  | edit.cshtml |
 |RF-014| A aplicação deve permitir ao usuário realizar a recuperação da senha de acesso.  | - |
 
+**Realizar cotação do seguro**
+
+
+|ID    | Descrição do Requisito  | Artefato(s) produzido(s) |
+|------|-----------------------------------------|----|
+|RF-001| A aplicação deve conter e permitir ao usuário a realização de uma cotação de seguro de forma precisa e sem complexidade. | CotacaoSeguro.cs |
+|RF-007| A aplicação deve mostrar em sua tela inicial alguns tipos de coberturas que a empresa oferece.  | - |
+|RF-009| Após a realização da cotação, o usuário poderá optar por ser direcionado para o whatsapp com algum atendente para finalizar a contratação do seguro.  | - |
+
+**Funcionalidades área do cliente**
+
+
+|ID    | Descrição do Requisito  | Artefato(s) produzido(s) |
+|------|-----------------------------------------|----|
+|RF-004| A aplicação deve mostrar para usuários logados suas mensalidades a vencer (se houver um plano adquirido). | -|
+|RF-006| A aplicação deve permitir que os usuários cadastrados avaliem a qualidade do serviço prestado.  | Avaliacao.cs |
+|RF-010| A aplicação deve permitir ao usuário cancelar o seguro.  | - |
+|RF-012| A aplicação deve permitir ao usuário comunicar o sinistro, seja para reparo ou reembolso.  | - |
+|RF-013| A aplicação deve permitir ao usuário acompanhar o processo de restituição do sinistro.  | - |
+
 # Instruções de acesso
 
-Não deixe de informar o link onde a aplicação estiver disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
+A aplicação está disponível para acesso no link a seguir: http://brunooferreira-001-site1.htempurl.com/ através de qualquer navegador web. 
 
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
+O usuário teste é Juliana Pereira: 
 
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
-
-> **Links Úteis**:
->
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON Data Set Sample](https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
+- E-mail: juliana.pereira@gmail.com
+- Senha: 1234
