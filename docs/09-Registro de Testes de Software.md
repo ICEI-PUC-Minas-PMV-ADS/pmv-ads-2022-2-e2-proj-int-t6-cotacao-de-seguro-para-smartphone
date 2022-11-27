@@ -25,6 +25,23 @@ Através do Visual Studio é possível visualizar a tabela de usuários criada.
 ![table users](https://user-images.githubusercontent.com/90807404/200700882-ebe546e8-ceab-40d8-8d7c-f252e53e9f12.jpg)
 
 
+**Caso de Teste 02 - Realizar cotação de seguro**
+
+O caso de teste obteve êxito em partes, após realizar o cadastro no site foi possível acessar o mesmo e criar uma cotação com base no modelo do smarthope e seu valor de aquisição, ficando pendente a possibilidade de ser direcionado para o whatsapp para contratar o seguro. 
+
+- Tela de Realizar de Cotação
+
+![realizar_cotacao](https://user-images.githubusercontent.com/90807404/204136525-6922da81-cc1c-4d2c-bb08-3bb2028a3f8a.png)
+
+- Tela de Cotações
+
+![cotacoes](https://user-images.githubusercontent.com/90807404/204136682-e87230fd-053c-4e82-a6f9-084889837655.png)
+
+A seguir, foi criado um vídeo da aplicação mostrando a funcionalidade da realização da cotação, correspondente ao registro do Caso de Teste 1. 
+
+![cotação](https://user-images.githubusercontent.com/90807404/204136722-cb22f2e7-d347-4a3f-95d5-1b19e32a2bbc.gif)
+
+
 ## Avaliação
 
 Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
