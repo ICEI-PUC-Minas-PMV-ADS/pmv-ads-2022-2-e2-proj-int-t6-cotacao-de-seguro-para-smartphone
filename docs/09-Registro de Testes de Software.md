@@ -41,6 +41,18 @@ A seguir, foi criado um vídeo da aplicação mostrando a funcionalidade da real
 
 ![cotação](https://user-images.githubusercontent.com/90807404/204136722-cb22f2e7-d347-4a3f-95d5-1b19e32a2bbc.gif)
 
+**Caso de Teste 03 - Funcionalidades área do cliente**
+
+O caso de teste obteve êxito em partes, foi possível realizar apenas a avaliação do serviço prestado. 
+
+- Avaliações
+
+![avaliações](https://user-images.githubusercontent.com/90807404/204137080-f7b7bc07-dac2-4dfa-b5da-2af0f50dea5f.jpg)
+
+A seguir, foi criado um vídeo da aplicação mostrando a funcionalidade da realização de avaliações, correspondente ao registro do Caso de Teste 3. 
+
+![avaliação](https://user-images.githubusercontent.com/90807404/204137101-61d9b83b-f1b6-4278-af9f-57f698a31b32.gif)
+
 
 ## Avaliação
 
