@@ -27,7 +27,7 @@ Através do Visual Studio é possível visualizar a tabela de usuários criada.
 
 **Caso de Teste 02 - Realizar cotação de seguro**
 
-O caso de teste obteve êxito em partes, após realizar o cadastro no site foi possível acessar o mesmo e criar uma cotação com base no modelo do smarthope e seu valor de aquisição, ficando pendente a possibilidade de ser direcionado para o whatsapp para contratar o seguro. 
+O caso de teste obteve êxito em partes, após realizar o cadastro no site foi possível acessar o mesmo e criar uma cotação com base no modelo do smarthope e seu valor de aquisição, ficando pendente a possibilidade de ser direcionado para o whatsapp para contratar o seguro e os tipos de cobertura que a empresa oferece. 
 
 - Tela de Realizar de Cotação
 
