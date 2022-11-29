@@ -15,6 +15,10 @@ namespace SeguroCelular.Mvc.Models
         [Required(ErrorMessage = "Obrigatório Informar o modelo!")]
         public string ModeloCelular { get; set; }
 
+        [Display(Name = "Escolha um plano de cobertura")]
+        [Required(ErrorMessage = "Obrigatório Informar o plano!")]
+        public EPlanos Planos { get; set; }
+
         [Display(Name = "Qual o valor de mercado do seu celular?")]
         [Required(ErrorMessage = "Obrigatório Informar o valor!")]
         public EValoresCelular Valor { get; set; }

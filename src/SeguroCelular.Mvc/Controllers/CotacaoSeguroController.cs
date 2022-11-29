@@ -59,7 +59,7 @@ namespace SeguroCelular.Mvc.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ModeloCelular,Valor,ValorCotacao,UserId")] CotacaoSeguro cotacaoSeguro)
+        public async Task<IActionResult> Create([Bind("Id,ModeloCelular,Planos, Valor,ValorCotacao,UserId")] CotacaoSeguro cotacaoSeguro)
         {
             var email = User.GetUserEmail();
             var usuario = await _context.Users
@@ -68,7 +68,8 @@ namespace SeguroCelular.Mvc.Controllers
             if (ModelState.IsValid)
             {
                 cotacaoSeguro.UserId = usuario.Id;              
-                cotacaoSeguro.ValorCotacao = GerarValorCotacao(cotacaoSeguro.Valor);
+                var valorCotacaoSemPlano = GerarValorCotacaoSemPlano(cotacaoSeguro.Valor);
+                cotacaoSeguro.ValorCotacao = GerarValorCotacaoComPLano(cotacaoSeguro.Planos, valorCotacaoSemPlano);
                 _context.Add(cotacaoSeguro);               
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -101,6 +102,10 @@ namespace SeguroCelular.Mvc.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,ModeloCelular,Valor,ValorCotacao,UserId")] CotacaoSeguro cotacaoSeguro)
         {
+            var email = User.GetUserEmail();
+            var usuario = await _context.Users
+                .FirstOrDefaultAsync(m => m.Email == email);
+
             if (id != cotacaoSeguro.Id)
             {
                 return NotFound();
@@ -110,6 +115,9 @@ namespace SeguroCelular.Mvc.Controllers
             {
                 try
                 {
+                    cotacaoSeguro.UserId = usuario.Id;
+                    var valorCotacaoSemPlano = GerarValorCotacaoSemPlano(cotacaoSeguro.Valor);
+                    cotacaoSeguro.ValorCotacao = GerarValorCotacaoComPLano(cotacaoSeguro.Planos, valorCotacaoSemPlano);
                     _context.Update(cotacaoSeguro);
                     await _context.SaveChangesAsync();
                 }
@@ -165,7 +173,27 @@ namespace SeguroCelular.Mvc.Controllers
             return _context.Cotacoes.Any(e => e.Id == id);
         }
 
-        private static int GerarValorCotacao(EValoresCelular valor)
+        private static int GerarValorCotacaoComPLano(EPlanos plano, int cotacaoComPlano)
+        {
+            switch (plano)
+            {
+                case EPlanos.Plano1:
+                    cotacaoComPlano += 0;
+                    break;
+                case EPlanos.Plano2:
+                    cotacaoComPlano += 10;
+                    break;
+                case EPlanos.Plano3:
+                    cotacaoComPlano += 20;
+                    break;
+                default:
+                    cotacaoComPlano = 0;
+                    break;
+            }
+            return cotacaoComPlano;
+        }
+
+        private static int GerarValorCotacaoSemPlano(EValoresCelular valor)
         {
             int cotacao = 0;
             switch (valor)

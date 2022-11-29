@@ -17,13 +17,13 @@
                 @Html.DisplayNameFor(model => model.ModeloCelular)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Planos)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Valor)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.ValorCotacao)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.User)
             </th>
             <th></th>
         </tr>
@@ -37,13 +37,13 @@
                         @Html.DisplayFor(modelItem => item.ModeloCelular)
                     </td>
                     <td>
+                        @Html.DisplayFor(modelItem => item.Planos)
+                    </td>
+                    <td>
                         @Html.DisplayFor(modelItem => item.Valor)
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.ValorCotacao)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.User.Email)
                     </td>
                     <td>
                         <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id"><i class="fa-solid fa-pen-to-square"></i></a>
