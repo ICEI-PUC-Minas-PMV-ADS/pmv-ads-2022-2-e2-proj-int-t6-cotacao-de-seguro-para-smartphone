@@ -8,6 +8,9 @@
 
 Criação de uma aplicação interativa que permite aos usuários realizar cotações para segurar seus aparelhos smartphone com melhor custo benefício de plano e franquia e que contemple a assistência técnica 24 horas, cobrindo quebra acidental, perda, danos líquidos ou furto..
 
+# Projeto hospedado: 
+<li><a href="http://brunooferreira-001-site1.htempurl.com/"> CLIQUE PARA IR PARA O PROJETO.</a></li>
+
 ## Integrantes
 
 - Ayrles Alves De Lima Sales
