@@ -114,17 +114,6 @@ namespace SeguroCelular.Mvc.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nome,Email,Senha")] User model)
         {
-            //var userEmails = _context.Users.Select(x => x.Email).ToList();
-
-            //foreach (var email in userEmails)
-            //{
-            //    if (model.Email == email)
-            //    {
-            //        ViewBag.Message = "E-mail já cadastrado no sistema!";
-            //        return View();
-            //    }
-            //}
-
             if (EmailExiste(model.Email))
             {
                 ViewBag.Message = "E-mail já cadastrado no sistema!";
