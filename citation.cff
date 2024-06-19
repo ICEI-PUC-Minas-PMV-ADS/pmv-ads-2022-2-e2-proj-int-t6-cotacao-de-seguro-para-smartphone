@@ -1,0 +1,33 @@
+message: Please cite this software using these metadata.
+title: Cotação de Seguro Para Smartphone
+authors:
+  - family-names: Alves De Lima Sales
+    given-names: Ayrles
+  - family-names: Roberto Olympio Ferreira
+    given-names: Bruno
+  - family-names: Servelo Da Costa
+    given-names: Guilherme 
+  - family-names:  Furtado De Sousa
+    given-names: Leandro 
+  - family-names: Moreira Franco De Souza
+    given-names: Leonardo 
+  - family-names: Amorim Costa
+    given-names: Letícia
+  - family-names: Araruna De Lima
+    given-names: Lia 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Jeunon De Alencar
+    given-names: Bernardo 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Christina de Paiva Carvalho
+    given-names: Joyce 
+keywords:
+  - Smartphone
+  - Celular
+  - Roubos
+  - Segurança
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e2-proj-int-t6-cotacao-de-seguro-para-smartphone
+version: 1.0.0
+date-released: 2022-10-06
